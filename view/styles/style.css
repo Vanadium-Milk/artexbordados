@@ -53,57 +53,57 @@ h2 {
 }
 
 .shirt-category{
-    padding-left:130px;
-    color:white;
-    width:550px;
-    height:200px;
+    padding-left: 130px;
+    color: white;
+    width: 550px;
+    height: 200px;
     background-color: #316639;
-    border-radius:30px;
+    border-radius: 30px;
     position: relative;
-    top:30px;
+    top: 30px;
 }
 
 .shirt-picture{
-    float:right;
-    top:15px;
-    position:absolute;
-    right:60px;
+    float: right;
+    top: 15px;
+    position: absolute;
+    right: 60px;
 }
 
 .caps-category{
-    padding-left:135px;
-    color:white;
-    width:550px;
-    height:200px;
+    padding-left: 135px;
+    color: white;
+    width: 550px;
+    height: 200px;
     background-color: #316639;
-    border-radius:30px;
+    border-radius: 30px;
     position: relative;
-    top:30px;
+    top: 30px;
 }
 
 .cap-picture{
-    float:right;
-    top:30px;
-    position:absolute;
-    right:60px;
+    float: right;
+    top: 30px;
+    position: absolute;
+    right: 60px;
 }
 
 .sleeveless-category{
-    padding-left:100px;
-    color:white;
-    width:550px;
-    height:200px;
+    padding-left: 100px;
+    color: white;
+    width: 550px;
+    height: 200px;
     background-color: #316639;
     border-radius:30px;
     position: relative;
-    top:30px;
+    top: 30px;
 }
 
 .sleeveless-picture{
-    float:right;
-    top:15px;
-    position:absolute;
-    right:60px;
+    float: right;
+    top: 15px;
+    position: absolute;
+    right: 60px;
 }
 
 .button {
@@ -123,3 +123,37 @@ h2 {
     font-size: x-large;
     color:#316639;
 }
+
+.carousel-item img {
+    margin-right: 20px;
+}
+
+.custom-next,
+.custom-prev {
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+  
+  .custom-next img, .custom-prev img{
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-inner {
+    left:18px;
+}
+
+.carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #96c49d;
+    bottom: -60px;
+}
+
+.carousel .carousel-indicators li.active {background-color: #316639;}
