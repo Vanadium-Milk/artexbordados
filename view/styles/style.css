@@ -10,6 +10,7 @@
 h1 {
     padding-top: 28px;
     font-family: 'League Spartan';
+    font-size: 100;
 }
 
 h2 {
@@ -123,6 +124,13 @@ h2 {
     font-size: x-large;
     color: #316639;
     border-style: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button-see-all:hover,
+.button-form:hover {
+    transform: scale(1.1);
 }
 
 .carousel-item img {
@@ -178,4 +186,35 @@ h2 {
     font-size: 22px;
     color: #316639;
     border-style: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button span {
+    max-width: 0;
+    -webkit-transition: max-width 1s;
+    transition: max-width 1s;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #316639;
+    font-size: 20px;
+    font-family: 'League Spartan';
+}
+
+button:hover span{
+    max-width: 12rem;
+}
+
+.search-btn {
+    background-color: white;
+    border-radius: 150px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-style: none;
+    align-items: center;
+    cursor: pointer;
 }
