@@ -4,7 +4,7 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,19 +31,7 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+          <a class="nav-link" href="#">My Cart</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -55,14 +43,14 @@
 </header>
 
 <body>
-  <h1>Welcome!</h1>
+  <h1 style="text-align: center;">Welcome!</h1>
 
   <div class="container">
     <div class="row mb-4">
       <div class="col-md-6 mb-4">
         <div class="hoodie-category">
           <h2>Hoodies</h2>
-          <div class="button"><strong>See All</strong></div>
+          <button class="button button-see-all">See All</button>
           <div class="hoodie-picture">
             <img src="view/images/hoodie.png" width="150px" height="170px;">
           </div>
@@ -114,7 +102,7 @@
       <div class="col-md-6 mb-4">
         <div class="tshirt-category">
           <h2>T-Shirts</h2>
-          <div class="button"><strong>See All</strong></div>
+          <button class="button button-see-all">See All</button>
             <div class="tshirt-picture">
             <img src="view/images/t-shirt.png" width="150px" height="170px">
           </div>
@@ -165,9 +153,9 @@
 
     <div class="row mb-4">
       <div class="col-md-6 mb-4">
-        <div class="shirt-category">
-          <h2>Shirts</h2>
-          <div class="button"><strong>See All</strong></div>
+        <div class="long-sleeved-category">
+          <h2>Long-Sleeved</h2>
+          <button class="button button-see-all">See All</button>
           <div class="shirt-picture">
             <img src="view/images/shirt.png" width="150px" height="170px">
           </div>
@@ -177,7 +165,7 @@
       <div class="col-md-6 mb-4">
         <div class="caps-category">
           <h2>Caps</h2>
-          <div class="button"><strong>See All</strong></div>
+          <button class="button button-see-all">See All</button>
           <div class="cap-picture">
             <img src="view/images/cap.png" width="150px" height="120px" alt="cap">
           </div>
@@ -189,7 +177,7 @@
       <div class="col-md-6 mb-4">
         <div class="sleeveless-category">
           <h2>Sleeveless</h2>
-          <div class="button"><strong>See All</strong></div>
+          <button class="button button-see-all">See All</button>
           <div class="sleeveless-picture">
             <img src="view/images/sleeveless.png" width="130px" height="170px" alt="sleeveñess">
           </div>
@@ -209,8 +197,38 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+
 </body>
 <br><br><br>
-<footer class="page-footer">
-</footer>
-</html>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="view/images/logo.png" alt="" width="80px" height="80px" style="float: left;">
+          <h1 style="font-size: 30px;">Artex</h1>
+          <br>
+          <div class="white-line"></div>
+          <br>
+          <h5 style="font-weight: 400;">A store that combines textiles with art.</h5>
+        </div>
+        <div class="col-md-4">
+          <h6 style="color:#cdffd4;">ADDRESS</h6>
+          Calle Geronimo Hernandez 305-local D, Insurgentes, 34130 Durango, Dgo.<br><br>
+          <h6 style="color:#cdffd4;">CONTACT</h6>
+          <i class="fa-solid fa-phone"></i>
+          618-179-1231<br>
+          <i class="fa-solid fa-envelope"></i>
+          artex.bordados.dgo@gmail.com
+          <br><br>
+        </div>
+        <div class="col-md-4">
+          <h6 style="color:#cdffd4;">COMMENTS AND SUGGESTIONS</h6>
+          Please click on the following button to open the form!<br><br>
+          <button class="button button-form">Contact Form</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
