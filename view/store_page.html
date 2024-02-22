@@ -17,26 +17,40 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <title>Artex</title>
     </head>
-    <header class="header">
-            <img class="logo-picture" src="images/logo.png" alt="" width="80px;" height="80px;">
-            <h1 style="padding-top:10px; padding-left: 5px;">Artex</h1>
 
-            <button class="button search-btn"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #316639; padding-top:10px;"></i>
-                <span>Search</span>
-              </button>
-        </div>
+    <header class="header">
+      <img class="logo-picture" src="images/logo.png" alt="" width="80px;" height="80px;">
+      <h3 style="padding-top:10px; padding-left: 5px; font-size: 30px;">Artex</h3>
+      
+      <button class="button search-button">
+        <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #316639;"></i>
+      </button>
     </header>
+
     <body>
-        Store Page
+      <h1 style="font-family: 'League Spartan'; font-size: 40px; margin-left: 40px; margin-top: 40px; color: #316639;">Explore</h1>
+        <form action="" method="get" class="search-bar">
+          <input type="text" placeholder="Search a Design" name="q">
+          <button class="button submit-search"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: rgb(151, 151, 151); padding-top:10px;"></i></button>
+        </form>
+        
+        <div class="garment-sections">
+          <button class="button hoodies-button">Hoodies</button>
+          <button class="button tshirts-button">T-Shirts</button>
+          <button class="button sleeves-button">Sleeved</button>
+          <button class="button caps-button">Caps</button>
+          <button class="button sleeveless-button">Sleeveless</button>
+        </div>
     </body>
 
+  <!-- Footer -->
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-12">
           <img src="images/logo.png" alt="" width="80px" height="80px" style="float: left;">
-          <h1 style="font-size: 30px; padding-top: 28px;">Artex</h1>
+          <h3 style="font-size: 25px; padding-top: 28px; padding-left: 20px;">Artex</h3>
           <br>
           <div class="white-line"></div>
           <br>
@@ -60,5 +74,4 @@
       </div>
     </div>
   </footer>
-
 </html>

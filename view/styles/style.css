@@ -20,6 +20,7 @@
     background-color: #316639;
     height: 280px;
     font-family: 'League Spartan';
+    margin-top:30px;
     padding-top: 50px;
     padding-bottom: 30px;
     color: white;
@@ -28,8 +29,8 @@
 
 h1 {
     font-family: 'League Spartan';
-    font-size: 100;
     flex-grow: 1;
+    text-align: center;
 }
 
 h2 {
@@ -225,32 +226,180 @@ h2 {
     transition: 0.2s;
 }
 
-button span {
-    max-width: 0;
-    -webkit-transition: max-width 1.5s;
-    transition: max-width 1.5s;
-    display: inline-block;
-    vertical-align: top;
-    white-space: nowrap;
-    overflow: hidden;
-    color: #316639;
+
+.search-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border-style: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.hoodies-button{
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    text-align: center;
+    right: 30px;
+    left: 30px;
+    top: 30px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+    color:#316639;
+    background-color: white;
+    width: 100px;
+    height: 47px;
+    border-radius: 30px;
+    border-color: #316639;
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hoodies-button:hover {
+    background-color:#316639;
+    color:white;
+}
+
+.hoodies-button:focus {
+    background-color:#316639;
+    color:white;
+}
+
+.tshirts-button{
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 40px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+    color:#316639;
+    background-color: white;
+    width: 102px;
+    height: 47px;
+    border-radius: 30px;
+    border-color: #316639;
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tshirts-button:hover {
+    background-color:#316639;
+    color:white;
+}
+
+.sleeves-button{
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 40px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+    color:#316639;
+    background-color: white;
+    width: 104px;
+    height: 47px;
+    border-radius: 30px;
+    border-color: #316639;
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sleeves-button:hover {
+    background-color:#316639;
+    color:white;
+}
+
+.caps-button{
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 40px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+    color:#316639;
+    background-color: white;
+    width: 85px;
+    height: 47px;
+    border-radius: 30px;
+    border-color: #316639;
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.caps-button:hover {
+    background-color:#316639;
+    color:white;
+}
+
+.sleeveless-button{
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 40px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+    color:#316639;
+    background-color: white;
+    width: 115px;
+    height: 47px;
+    border-radius: 30px;
+    border-color: #316639;
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sleeveless-button:hover {
+    background-color:#316639;
+    color:white;
+}
+
+.search-bar {
+    margin-left: 20%;
+    margin-top: 40px; 
+    width: 70%;
+    max-width: 1000px;
+    background: #dfdfdf;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 3px 10px;
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 7px 25px;
     font-size: 20px;
+    color: black;
     font-family: 'League Spartan';
 }
 
-button:hover span{
-    max-width: 12rem;
+::placeholder {
+    font-family: 'League Spartan';
+    color: rgb(151, 151, 151);
 }
 
-.search-btn {
-    background-color: white;
-    border-radius: 200px;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    border-style: none;
-    align-items: center;
+.submit-search {
+    background: none;
+    border: 0;
     cursor: pointer;
-    right: 30px;
+    padding: 10px 25px;
+}
+
+.garment-sections {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin-right: 20px;
 }
