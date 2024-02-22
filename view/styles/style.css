@@ -21,6 +21,7 @@
     height: 280px;
     font-family: 'League Spartan';
     margin-top:30px;
+    padding-top: 50px;
     padding-bottom: 30px;
     color: white;
     overflow: scroll;
@@ -361,7 +362,9 @@ h2 {
 }
 
 .search-bar {
-    width: 80%;
+    margin-left: 20%;
+    margin-top: 40px; 
+    width: 70%;
     max-width: 1000px;
     background: #dfdfdf;
     display: flex;
@@ -399,23 +402,4 @@ h2 {
     position: relative;
     align-items: center;
     margin-right: 20px;
-}
-
-.my-cart{
-    background-color: white;
-    justify-content: center;
-    border: 0;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    border-style: none;
-    cursor: pointer;
-    background-color: #316639;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
 }
