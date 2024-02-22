@@ -33,6 +33,10 @@ h1 {
 }
 
 h2 {
+    font-family: 'League Spartan';
+}
+
+.section-title {
     padding-top: 40px;
     font-family: 'League Spartan';
 }
@@ -53,6 +57,18 @@ h2 {
     top:15px;
     position:absolute;
     right:60px;
+}
+
+.product-cell{
+    border-radius: 20px;
+    background-color: #E8E8E8;
+    margin: 10px;
+}
+
+.preview-img{
+    margin: auto; 
+    display: block;
+    width: 80%;
 }
 
 .tshirt-category{
