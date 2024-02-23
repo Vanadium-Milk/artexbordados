@@ -23,6 +23,7 @@
     padding-top: 30px;
     padding-bottom: 20px;
     color: white;
+    margin-top: 5%;
 }
 
 .footer h3,
@@ -31,10 +32,9 @@
     margin-bottom: 10px;
 }
 
-/* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) {
     .footer {
-        height: auto; /* Ajusta la altura automáticamente */
+        height: auto;
     }
 
     .row {
@@ -181,18 +181,18 @@ h2 {
 
 .button-see-all {
     padding: 10px 20px;
-    width: 40%; /* Utilizando unidades relativas */
-    max-width: 200px; /* Limitando el ancho máximo */
-    height: auto; /* Ajustando la altura automáticamente */
+    width: 40%;
+    max-width: 200px;
+    height: auto;
     background-color: white;
     border-radius: 50px;
     position: absolute;
     bottom: 15%;
-    left: 10%; /* Utilizando unidades relativas */
+    left: 10%;
     text-align: center;
     font-family: 'League Spartan';
     font-weight: normal;
-    font-size: 1.5em; /* Utilizando unidades relativas */
+    font-size: 1.5em;
     color: #316639;
     border-style: none;
     cursor: pointer;
@@ -279,17 +279,12 @@ h2 {
 
 .hoodies-button{
     margin-right: 20px;
-    margin-top: 40px;
-    margin-left: 40px;
     text-align: center;
-    right: 30px;
-    left: 30px;
-    top: 30px;
     font-family: 'League Spartan';
     font-size: 18px;
     color:#316639;
     background-color: white;
-    width: 100px;
+    min-width: 100px;
     height: 47px;
     border-radius: 30px;
     border-color: #316639;
@@ -311,12 +306,11 @@ h2 {
 .tshirts-button{
     text-align: center;
     margin-right: 20px;
-    margin-top: 40px;
     font-family: 'League Spartan';
     font-size: 18px;
     color:#316639;
     background-color: white;
-    width: 102px;
+    min-width: 102px;
     height: 47px;
     border-radius: 30px;
     border-color: #316639;
@@ -333,12 +327,11 @@ h2 {
 .sleeves-button{
     text-align: center;
     margin-right: 20px;
-    margin-top: 40px;
     font-family: 'League Spartan';
     font-size: 18px;
     color:#316639;
     background-color: white;
-    width: 104px;
+    min-width: 104px;
     height: 47px;
     border-radius: 30px;
     border-color: #316639;
@@ -355,12 +348,11 @@ h2 {
 .caps-button{
     text-align: center;
     margin-right: 20px;
-    margin-top: 40px;
     font-family: 'League Spartan';
     font-size: 18px;
     color:#316639;
     background-color: white;
-    width: 85px;
+    min-width: 85px;
     height: 47px;
     border-radius: 30px;
     border-color: #316639;
@@ -377,12 +369,11 @@ h2 {
 .sleeveless-button{
     text-align: center;
     margin-right: 20px;
-    margin-top: 40px;
     font-family: 'League Spartan';
     font-size: 18px;
     color:#316639;
     background-color: white;
-    width: 115px;
+    min-width: 115px;
     height: 47px;
     border-radius: 30px;
     border-color: #316639;
@@ -397,64 +388,62 @@ h2 {
 }
 
 .search-bar {
-    margin-left: 20%;
-    margin-top: 40px; 
-    width: 70%;
+    margin: 5% auto;
+    width: 90%;
     max-width: 1000px;
     background: #dfdfdf;
     display: flex;
     align-items: center;
     border-radius: 60px;
-    padding: 3px 10px;
+    padding: 5px 12px;
+    margin-bottom: 30px;
+    margin-top:30px;
 }
 
-.search-bar input{
-    background: transparent;
+.search-bar input {
     flex: 1;
+    background: transparent;
     border: 0;
     outline: none;
-    padding: 7px 25px;
+    padding: 10px 13px;
     font-size: 20px;
     color: black;
     font-family: 'League Spartan';
-}
-
-::placeholder {
-    font-family: 'League Spartan';
-    color: rgb(151, 151, 151);
 }
 
 .submit-search {
     background: none;
     border: 0;
     cursor: pointer;
-    padding: 10px 25px;
+    padding: 10px 15px;
 }
 
 .garment-sections {
     display: flex;
     justify-content: center;
-    position: relative;
+    overflow-x: auto;
+    padding: 10px;
     align-items: center;
-    margin-right: 20px;
 }
 
 .product-card-container {
     margin-top: 50px;
-    width: 250px;
-    height: 470px;
+    width: 200px;
+    height: 420px;
     background-color: #E8E8E8;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 30px;
+    margin-right: 20px;
 }
 
 .product-card-description{
     font-family: 'League Spartan';
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     border-radius: 20px;
-    width: 250px;
+    width: auto;
     height: 170px;
     background-color:white;
     padding-top: 20px;
