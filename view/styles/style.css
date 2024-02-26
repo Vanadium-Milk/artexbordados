@@ -24,6 +24,12 @@
     padding-bottom: 20px;
     color: white;
     margin-top: 5%;
+    bottom: 0;
+}
+
+.h3 {
+    font-size: 15px;
+    font-family: 'League Spartan';
 }
 
 .footer h3,
@@ -278,7 +284,6 @@ h2 {
 }
 
 .hoodies-button{
-    margin-left: auto;
     margin-right: 20px;
     text-align: center;
     font-family: 'League Spartan';
@@ -423,44 +428,69 @@ h2 {
     min-width: 100%;
     display: flex;
     justify-content: center;
-    overflow-x: auto;
     padding: 10px;
     align-items: center;
+    overflow-x: auto;
 }
 
-.product-card-container {
+.product-card-container{
     margin-top: 50px;
-    width: 230px;
-    height: 420px;
-    background-color: #E8E8E8;
-    border-radius: 25px;
+    margin-bottom: 50px;
+    max-width: 14em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-bottom: 30px;
-    margin-right: 20px;
-}
-
-.product-card-description{
-    font-family: 'League Spartan';
-    font-weight: 500;
-    font-size: 25px;
-    position: relative;
-    border-radius: 20px;
-    width: auto;
-    height: 170px;
-    background-color:white;
-    padding-top: 20px;
-    padding-left: 20px;
+    border-radius: 30px;
+    background-color: #E8E8E8;
+    margin-left: 2em;
 }
 
 .product-card-button{
-    width: 60px;
-    height: 60px;
+    margin-bottom: 0;
+}
+
+.product-card-description{
+    background-color: white;
+    border-radius: 30px;
+    padding: 1em;
+}
+
+.product-card-description h4{
+    font-size: 1.5em;
+    font-family: 'League Spartan';
+    color: black;
+}
+
+.product-card-container img{
+    max-width:100%;
+}
+
+.product-card-button{
+    width: 2.7em;
+    height: 2.7em;
     background-color: #316639;
     border: 0;
     border-radius: 50%;
+    cursor: pointer;
+    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.product-card-description div{
     display: flex;
-    float: right;
-    margin-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'League Spartan';
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 576px) {
+    .product-card-container{
+        font-size: 0.9em;
+        max-width: 12em;
+    }
+
+    .footer{
+        margin-top: 500px;
+    }
 }
