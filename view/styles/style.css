@@ -471,8 +471,8 @@ h2 {
 }
 
 .product-card-button{
-    width: 2.7em;
-    height: 2.7em;
+    width: 50px;
+    height: 50px;
     background-color: #316639;
     border: 0;
     border-radius: 50%;
@@ -494,9 +494,23 @@ h2 {
 
 @media screen and (max-width: 576px) {
     .product-card-container{
-        font-size: 0.9em;
         max-width: 12em;
+        border-radius:5vw;
     }
+
+    .product-card-description{
+        font-size: 3vw;
+    }
+
+    .container .row [class^="col-"] {
+        margin-bottom: 2px;
+    }
+
+    .product-card-button{
+        width:9vw;
+        height:9vw;
+    }
+
 }
 
 .my-cart-button{
@@ -507,5 +521,68 @@ h2 {
     padding: 2em;
     position: sticky;
     border: 0;
+    cursor: pointer;
+}
+
+/* PRODUCT PAGE STYLES */
+
+.product-cell-big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 20px;
+    background-color: #E8E8E8;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.product-cell-big img {
+    max-width: 80%;
+}
+
+.product-name h2{
+    margin-top: 20px;
+    font-family: 'League Spartan';
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.product-name h3{
+    font-family: 'League Spartan';
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.product-cell-small{
+    background-color:#E8E8E8;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.product-cell-small img{
+    max-width: 100%;
+}
+
+.garment-options{
+    width: 100%;
+}
+
+.color-options{
+    margin-top: 50px;
+}
+
+.color-circle{
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
     cursor: pointer;
 }
