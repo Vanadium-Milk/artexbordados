@@ -510,7 +510,6 @@ h2 {
         width:9vw;
         height:9vw;
     }
-
 }
 
 .my-cart-button{
@@ -587,13 +586,30 @@ h2 {
     cursor: pointer;
 }
 
-.item-image{
-    background-color: #E8E8E8;
-    width: 200px;
-    height: 270px;
-
+.product-payment-description{
+    align-items: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.item-image img{
-    width: 100%;
+.product-payment-description h3{
+    font-family: 'League Spartan';
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    vertical-align: middle;
+}
+
+.cart-item{
+    float: right;
+    background-color: #E8E8E8;
+    width: 200px;
+    height: 240px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.cart-item img{
+    max-width: 100%;
 }
