@@ -586,3 +586,14 @@ h2 {
     margin-right: 10px;
     cursor: pointer;
 }
+
+.item-image{
+    background-color: #E8E8E8;
+    width: 200px;
+    height: 270px;
+
+}
+
+.item-image img{
+    width: 100%;
+}
