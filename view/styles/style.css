@@ -1,25 +1,83 @@
-.page-footer {
-    background-color:#316639;
-    height:300px;
-    font-family:'League Spartan';
-    color:white;
+.header {
+    background-color: #316639;
+    height: 110px;
+    font-family: 'League Spartan';
+    color: white;
+    padding-left: 20px;
+    padding-top: 0px;
+    padding-right: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
-h1 {
-    text-align: center;
+.logo-picture {
+    float: left;
+    vertical-align: middle;
+}
+
+.footer {
+    background-color: #316639;
+    font-family: 'League Spartan';
+    padding-left: 15px;
     padding-top: 30px;
+    padding-bottom: 20px;
+    color: white;
+    margin-top: 5%;
+    bottom: 0;
+}
+
+.h3 {
+    font-size: 15px;
     font-family: 'League Spartan';
 }
 
+.footer h3,
+.footer h5,
+.footer h6 {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: auto;
+    }
+
+    .footer .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+h1 {
+    font-family: 'League Spartan';
+    flex-grow: 1;
+    text-align: center;
+}
+
 h2 {
+    font-family: 'League Spartan';
+    float: left;
+    position: relative;
+}
+
+.section-title {
     padding-top: 40px;
     font-family: 'League Spartan';
 }
 
 .hoodie-category{
-    padding-left:110px;
+    padding-left:18%;
     color:white;
-    width:550px;
+    width: 100%;
+    max-width:550px;
     height:200px;
     background-color: #316639;
     border-radius:30px;
@@ -28,16 +86,21 @@ h2 {
 }
 
 .hoodie-picture{
-    float:right;
-    top:15px;
-    position:absolute;
-    right:60px;
+    float: right;
+    top: 15px;
+    position: absolute;
+    right: 20%;
+    width: 40%;
+    height: 40%;
+    max-width: 100px;
+    max-height: 120px;
 }
 
 .tshirt-category{
-    padding-left:110px;
+    padding-left:18%;
     color:white;
-    width:550px;
+    width: 100%;
+    max-width:550px;
     height:200px;
     background-color: #316639;
     border-radius:30px;
@@ -46,16 +109,21 @@ h2 {
 }
 
 .tshirt-picture{
-    float:right;
-    top:15px;
-    position:absolute;
-    right:60px;
+    float: right;
+    top: 15px;
+    position: absolute;
+    right: 20%;
+    width: 40%;
+    height: 40%;
+    max-width: 100px;
+    max-height: 120px;
 }
 
-.shirt-category{
-    padding-left:130px;
+.long-sleeved-category{
+    padding-left:12%;
     color:white;
-    width:550px;
+    width: 100%;
+    max-width:550px;
     height:200px;
     background-color: #316639;
     border-radius:30px;
@@ -64,16 +132,19 @@ h2 {
 }
 
 .shirt-picture{
-    float:right;
-    top:15px;
-    position:absolute;
-    right:60px;
+    float: right;
+    top: 15px;
+    position: absolute;
+    right: 20%;
+    height: 10%;
+    max-width: 80px;
 }
 
 .caps-category{
-    padding-left:135px;
+    padding-left: 22%;
     color:white;
-    width:550px;
+    width: 100%;
+    max-width:550px;
     height:200px;
     background-color: #316639;
     border-radius:30px;
@@ -82,16 +153,21 @@ h2 {
 }
 
 .cap-picture{
-    float:right;
-    top:30px;
-    position:absolute;
-    right:60px;
+    float: right;
+    top: 15%;
+    position: absolute;
+    right: 20%;
+    width: 40%;
+    height: 40%;
+    max-width: 100px;
+    max-height: 120px;
 }
 
 .sleeveless-category{
-    padding-left:100px;
+    padding-left:16%;
     color:white;
-    width:550px;
+    width: 100%;
+    max-width:550px;
     height:200px;
     background-color: #316639;
     border-radius:30px;
@@ -100,26 +176,424 @@ h2 {
 }
 
 .sleeveless-picture{
-    float:right;
-    top:15px;
-    position:absolute;
-    right:60px;
+    float: right;
+    top: 8%;
+    position: absolute;
+    right: 15%;
+    width: 40%;
+    height: 40%;
+    max-width: 100px;
+    max-height: 120px;
 }
 
-.button {
-    color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 200px;
-    height: 50px;
+.button-see-all {
+    padding: 10px 20px;
+    width: 40%;
+    max-width: 200px;
+    height: auto;
     background-color: white;
     border-radius: 50px;
     position: absolute;
-    bottom: 30px;
+    bottom: 15%;
+    left: 10%;
     text-align: center;
-    left: 70px;
     font-family: 'League Spartan';
-    font-weight:300;
-    font-size: x-large;
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #316639;
+    border-style: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button-see-all:hover,
+.button-form:hover,
+.product-card-button:hover {
+    transform: scale(1.1);
+}
+
+.product-card-container:hover {
+    transform: scale(1.05);
+}
+
+.carousel-item img {
+    margin-right: 20px;
+}
+
+.custom-next,
+.custom-prev {
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+  
+  .custom-next img, .custom-prev img{
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-inner {
+    left:18px;
+}
+
+.carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #96c49d;
+    bottom: -60px;
+}
+
+.carousel .carousel-indicators li.active {
+    background-color: #316639;
+}
+
+.white-line {
+    width: 310px;
+    height: 1px;
+    background-color: white;
+}
+
+.button-form {
+    width: 180px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'League Spartan';
+    font-weight: normal;
+    font-size: 22px;
+    color: #316639;
+    border-style: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.search-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border-style: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.hoodies-button{
+    margin-right: 20px;
+    text-align: center;
+    font-family: 'League Spartan';
+    font-size: 18px;
     color:#316639;
+    background-color: white;
+    min-width: 100px;
+    height: 47px;
+    border-radius: 30px;
+    border-color: #316639;
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hoodies-button:hover {
+    background-color:#316639;
+    color:white;
+}
+
+.hoodies-button:focus {
+    background-color:#316639;
+    color:white;
+}
+
+.tshirts-button{
+    text-align: center;
+    margin-right: 20px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+    color:#316639;
+    background-color: white;
+    min-width: 102px;
+    height: 47px;
+    border-radius: 30px;
+    border-color: #316639;
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tshirts-button:hover {
+    background-color:#316639;
+    color:white;
+}
+
+.sleeves-button{
+    text-align: center;
+    margin-right: 20px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+    color:#316639;
+    background-color: white;
+    min-width: 104px;
+    height: 47px;
+    border-radius: 30px;
+    border-color: #316639;
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sleeves-button:hover {
+    background-color:#316639;
+    color:white;
+}
+
+.caps-button{
+    text-align: center;
+    margin-right: 20px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+    color:#316639;
+    background-color: white;
+    min-width: 85px;
+    height: 47px;
+    border-radius: 30px;
+    border-color: #316639;
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.caps-button:hover {
+    background-color:#316639;
+    color:white;
+}
+
+.sleeveless-button{
+    text-align: center;
+    margin-right: 20px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+    color:#316639;
+    background-color: white;
+    min-width: 115px;
+    height: 47px;
+    border-radius: 30px;
+    border-color: #316639;
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sleeveless-button:hover {
+    background-color:#316639;
+    color:white;
+}
+
+.search-bar {
+    margin: 5% auto;
+    width: 90%;
+    max-width: 1000px;
+    background: #dfdfdf;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 5px 12px;
+    margin-bottom: 30px;
+    margin-top:30px;
+}
+
+.search-bar input {
+    flex: 1;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 10px 13px;
+    font-size: 20px;
+    color: black;
+    font-family: 'League Spartan';
+}
+
+.submit-search {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.garment-sections {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.product-card-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 14em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+    background-color: #E8E8E8;
+    margin-left: 2em;
+    transition: 0.2s;
+}
+
+.product-card-button{
+    margin-bottom: 0;
+}
+
+.product-card-description{
+    background-color: white;
+    border-radius: 30px;
+    padding: 1em;
+}
+
+.product-card-description h4{
+    font-size: 1.5em;
+    font-family: 'League Spartan';
+    color: black;
+}
+
+.product-card-container img{
+    max-width:100%;
+}
+
+.product-card-button{
+    width: 50px;
+    height: 50px;
+    background-color: #316639;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.product-card-description div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'League Spartan';
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 576px) {
+    .product-card-container{
+        max-width: 12em;
+        border-radius:5vw;
+    }
+
+    .product-card-description{
+        font-size: 3vw;
+    }
+
+    .container .row [class^="col-"] {
+        margin-bottom: 2px;
+    }
+
+    .product-card-button{
+        width:9vw;
+        height:9vw;
+    }
+
+}
+
+.my-cart-button{
+    background-color: #316639;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    float: right;
+    padding: 2em;
+    position: sticky;
+    border: 0;
+    cursor: pointer;
+}
+
+/* PRODUCT PAGE STYLES */
+
+.product-cell-big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 20px;
+    background-color: #E8E8E8;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.product-cell-big img {
+    max-width: 80%;
+}
+
+.product-name h2{
+    margin-top: 20px;
+    font-family: 'League Spartan';
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.product-name h3{
+    font-family: 'League Spartan';
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.product-cell-small{
+    background-color:#E8E8E8;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.product-cell-small img{
+    max-width: 100%;
+}
+
+.garment-options{
+    width: 100%;
+}
+
+.color-options{
+    margin-top: 50px;
+}
+
+.color-circle{
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.item-image{
+    background-color: #E8E8E8;
+    width: 200px;
+    height: 270px;
+
+}
+
+.item-image img{
+    width: 100%;
 }
