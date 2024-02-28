@@ -803,7 +803,7 @@ h2 {
 
 .expiry {
     margin: 1% auto;
-    width: 100%;
+    width: 90%;
     max-width: 1000px;
     background: #ffffff;
     display: flex;
@@ -827,7 +827,7 @@ h2 {
 
 .cvv {
     margin: 1% auto;
-    width: 100%;
+    width: 90%;
     max-width: 1000px;
     background: #ffffff;
     display: flex;
@@ -855,6 +855,7 @@ h2 {
     font-size: 20px;
     justify-content: center;
     text-align: center;
+    padding-right: 5px;
 }
 
 .pay-now{
@@ -870,4 +871,14 @@ h2 {
     cursor: pointer;
     justify-content: center;
     text-align: center;
+}
+
+.select{
+    font-family: 'League Spartan';
+    padding: 10px 8px;
+    border-radius: 10px;
+    border-color:#316639;
+    border-width: 2px;
+    margin-top: 50px;
+    font-size: 20px;
 }
