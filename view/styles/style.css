@@ -440,7 +440,7 @@ h2 {
 }
 
 .product-card-container{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 50px;
     max-width: 14em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -448,6 +448,8 @@ h2 {
     background-color: #E8E8E8;
     margin-left: 2em;
     transition: 0.2s;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .product-card-button{
@@ -458,6 +460,7 @@ h2 {
     background-color: white;
     border-radius: 30px;
     padding: 1em;
+    text-decoration: none;
 }
 
 .product-card-description h4{
@@ -700,4 +703,171 @@ h2 {
     font-size: 20px;
     color: rgb(110, 110, 110);
     font-family: 'League Spartan';
+}
+
+.state {
+    margin: 3% auto;
+    width: 90%;
+    max-width: 1000px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 12px;
+    outline: 0;
+}
+
+.state input {
+    flex: 1;
+    background: transparent;
+    border: solid 2px;
+    border-color:#316639;
+    border-radius: 20px;
+    padding: 13px 20px;
+    font-size: 20px;
+    color: rgb(110, 110, 110);
+    font-family: 'League Spartan';
+}
+
+.city {
+    margin: 3% auto;
+    width: 90%;
+    max-width: 1000px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 12px;
+    outline: 0;
+}
+
+.city input {
+    flex: 1;
+    background: transparent;
+    border: solid 2px;
+    border-color:#316639;
+    border-radius: 20px;
+    padding: 13px 20px;
+    font-size: 20px;
+    color: rgb(110, 110, 110);
+    font-family: 'League Spartan';
+}
+
+.address {
+    margin: 1% auto;
+    width: 90%;
+    max-width: 1000px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 12px;
+    outline: 0;
+}
+
+.address input {
+    flex: 1;
+    background: transparent;
+    border: solid 2px;
+    border-color:#316639;
+    border-radius: 20px;
+    padding: 13px 20px;
+    font-size: 20px;
+    color: rgb(110, 110, 110);
+    font-family: 'League Spartan';
+}
+
+.card-number {
+    margin: 1% auto;
+    width: 100%;
+    max-width: 1000px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 12px;
+    outline: 0;
+}
+
+.card-number input {
+    flex: 1;
+    background: transparent;
+    border: solid 2px;
+    border-color:#316639;
+    border-radius: 20px;
+    padding: 13px 20px;
+    font-size: 20px;
+    color: rgb(110, 110, 110);
+    font-family: 'League Spartan';
+}
+
+.expiry {
+    margin: 1% auto;
+    width: 100%;
+    max-width: 1000px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 12px;
+    outline: 0;
+}
+
+.expiry input {
+    flex: 1;
+    background: transparent;
+    border: solid 2px;
+    border-color:#316639;
+    border-radius: 20px;
+    padding: 13px 20px;
+    font-size: 20px;
+    color: rgb(110, 110, 110);
+    font-family: 'League Spartan';
+}
+
+.cvv {
+    margin: 1% auto;
+    width: 100%;
+    max-width: 1000px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 12px;
+    outline: 0;
+}
+
+.cvv input {
+    flex: 1;
+    background: transparent;
+    border: solid 2px;
+    border-color:#316639;
+    border-radius: 20px;
+    padding: 13px 20px;
+    font-size: 20px;
+    color: rgb(110, 110, 110);
+    font-family: 'League Spartan';
+}
+
+.checkbox-terms {
+    display: flex;
+    font-family: 'League Spartan';
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.pay-now{
+    display: flex;
+    margin-top: 20px;
+    font-size: 22px;
+    border-style: none;
+    padding: 15px 40px;
+    background-color: #316639;
+    border-radius: 30px;
+    color: white;
+    font-family: 'League Spartan';
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
 }
