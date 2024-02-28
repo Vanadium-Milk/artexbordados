@@ -510,6 +510,20 @@ h2 {
         width:9vw;
         height:9vw;
     }
+
+    .payment-product-description{
+        font-size: 5vw !important;
+    }
+
+    .cart-item{
+        width: 30vw !important;
+        height: 33vw !important;
+        float: right;
+    }
+
+    .product-price{
+        font-size: 5vw !important;
+    }
 }
 
 .my-cart-button{
@@ -586,23 +600,9 @@ h2 {
     cursor: pointer;
 }
 
-.product-payment-description{
-    align-items: center;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.product-payment-description h3{
-    font-family: 'League Spartan';
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 20px;
-    vertical-align: middle;
-}
+/* PAYMENT PAGE STYLES */
 
 .cart-item{
-    float: right;
     background-color: #E8E8E8;
     width: 200px;
     height: 240px;
@@ -612,4 +612,92 @@ h2 {
 
 .cart-item img{
     max-width: 100%;
+}
+
+.payment-product-description{
+    font-family: 'League Spartan';
+    font-weight: 400;
+    font-size: 23px;
+    float: right;
+}
+
+.product-price{
+    font-family: 'League Spartan';
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    margin-top: auto;
+    bottom: 0;
+}
+
+.full-name {
+    margin: 5% auto;
+    width: 90%;
+    max-width: 1000px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 8px 12px;
+    margin-bottom: 0px;
+}
+
+.full-name input {
+    flex: 1;
+    background: transparent;
+    border: solid 2px;
+    border-color:#316639;
+    border-radius: 20px;
+    padding: 13px 20px;
+    font-size: 20px;
+    color: rgb(110, 110, 110);
+    font-family: 'League Spartan';
+}
+
+.email {
+    margin: 3% auto;
+    width: 90%;
+    max-width: 1000px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 12px;
+    outline: 0;
+}
+
+.email input {
+    flex: 1;
+    background: transparent;
+    border: solid 2px;
+    border-color:#316639;
+    border-radius: 20px;
+    padding: 13px 20px;
+    font-size: 20px;
+    color: rgb(110, 110, 110);
+    font-family: 'League Spartan';
+}
+
+.phone-number {
+    margin: 3% auto;
+    width: 90%;
+    max-width: 1000px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 12px;
+    outline: 0;
+}
+
+.phone-number input {
+    flex: 1;
+    background: transparent;
+    border: solid 2px;
+    border-color:#316639;
+    border-radius: 20px;
+    padding: 13px 20px;
+    font-size: 20px;
+    color: rgb(110, 110, 110);
+    font-family: 'League Spartan';
 }
