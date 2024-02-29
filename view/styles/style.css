@@ -527,6 +527,15 @@ h2 {
     .product-price{
         font-size: 5vw !important;
     }
+
+    .item-picture{
+        width: 34vw !important;
+        height: 40vw !important;
+    }
+
+    .item-detail{
+    }
+
 }
 
 .my-cart-button{
@@ -875,10 +884,139 @@ h2 {
 
 .select{
     font-family: 'League Spartan';
-    padding: 10px 8px;
-    border-radius: 10px;
+    padding: 14px 20px;
+    border-radius: 20px;
     border-color:#316639;
-    border-width: 2px;
-    margin-top: 50px;
+    border-width: 2.5px;
     font-size: 20px;
+    margin-right: 40px;
+}
+
+.more-button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border-color: #316639;
+    border-width: 3px;
+    cursor: pointer;
+    outline: 0;
+    margin-left: 10px;
+}
+
+.less-button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border-color: #316639;
+    border-width: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.add-or-remove h5{
+    display: inline;
+    font-family: 'League Spartan';
+    font-weight: 400;
+    color: black;
+    font-size: 35px;
+
+}
+
+.d-flex{
+    justify-content: center;
+}
+
+.add-to-cart-btn{
+    background-color: #316639;
+    border-style: none;
+    padding: 14px 28px;
+    font-family: 'League Spartan';
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.total-price h4, .total-price h3{
+    font-family: 'League Spartan';
+    margin-right: 50px;
+}
+
+/* MY CART INTERFACE STYLES */
+
+.items-number-notif{
+    margin-top: 30px;
+    text-align: center;
+    width: 800px;
+    height: 60px;
+    background-color: #F6ECDD;
+    padding: 20px 30px;
+    border-radius: 30px;
+    font-family: 'League Spartan';
+    color: #A09584;
+    font-size: 20px;
+}
+
+.centered-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-right: 20px;
+}
+
+.item-picture{
+    background-color: #E8E8E8;
+    border-radius: 30px;
+    height: 225px;
+    width: 200px;
+    padding: 20px 20px;
+}
+
+.item-picture img{
+    width: 100%;
+    height: auto;
+}
+
+.remove-item{
+    background: none;
+    cursor: pointer;
+    border-style: none;
+    margin-right: 15px;
+}
+
+.item-detail{
+    font-family: 'League Spartan';
+    display: flex;
+    flex-direction: column;
+    height: 225px;
+}
+
+.item-detail h3{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.checkout-window{
+    padding-top: 30px;
+    background-color: #316639;
+    height: 400px;
+    width: 400px;
+    border-radius: 30px;
+    color: white;
+    font-family: 'League Spartan';
 }
