@@ -85,6 +85,15 @@ h2 {
     top:30px;
 }
 
+.gray-container{
+    max-width: 500px;
+    max-height: 617px;
+    width: 250px;
+    height: 250px;
+    background-color: #E8E8E8;
+    border-radius: 30px;
+}
+
 .hoodie-picture{
     float: right;
     top: 15px;
