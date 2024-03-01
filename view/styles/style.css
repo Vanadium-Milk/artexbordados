@@ -297,7 +297,7 @@ h2 {
     color:#316639;
     background-color: white;
     min-width: 100px;
-    height: 47px;
+    height: 44px;
     border-radius: 30px;
     border-color: #316639;
     border-style: solid;
@@ -323,7 +323,7 @@ h2 {
     color:#316639;
     background-color: white;
     min-width: 102px;
-    height: 47px;
+    height: 44px;
     border-radius: 30px;
     border-color: #316639;
     border-style: solid;
@@ -344,7 +344,7 @@ h2 {
     color:#316639;
     background-color: white;
     min-width: 104px;
-    height: 47px;
+    height: 44px;
     border-radius: 30px;
     border-color: #316639;
     border-style: solid;
@@ -365,7 +365,7 @@ h2 {
     color:#316639;
     background-color: white;
     min-width: 85px;
-    height: 47px;
+    height: 44px;
     border-radius: 30px;
     border-color: #316639;
     border-style: solid;
@@ -386,7 +386,7 @@ h2 {
     color:#316639;
     background-color: white;
     min-width: 115px;
-    height: 47px;
+    height: 44px;
     border-radius: 30px;
     border-color: #316639;
     border-style: solid;
@@ -407,7 +407,7 @@ h2 {
     display: flex;
     align-items: center;
     border-radius: 60px;
-    padding: 5px 12px;
+    padding: 3px 12px;
     margin-bottom: 30px;
     margin-top:30px;
 }
@@ -498,15 +498,23 @@ h2 {
 @media screen and (max-width: 576px) {
     .product-card-container{
         max-width: 12em;
-        border-radius:5vw;
+        margin-top: 0;
+        margin-bottom: 30px;
+        margin-left: 0;
     }
 
     .product-card-description{
         font-size: 3vw;
+        border-radius: 4vw;
     }
 
     .container .row [class^="col-"] {
         margin-bottom: 2px;
+    }
+
+    .garment-sections {
+        justify-content: left;
+        margin-bottom: 20px;
     }
 
     .product-card-button{
@@ -516,6 +524,7 @@ h2 {
 
     .payment-product-description{
         font-size: 5vw !important;
+        margin-left: 3vw;
     }
 
     .cart-item{
@@ -529,13 +538,86 @@ h2 {
     }
 
     .item-picture{
-        width: 34vw !important;
-        height: 40vw !important;
+        width: 30vw !important;
+        height: 36vw !important;
+        margin-left: 0vw !important;
     }
 
     .item-detail{
+        height: 40vw !important;
+        width: 40vw !important;
     }
 
+    .item-detail h2,
+    .item-detail .total-price h4 {
+        font-size: 4.5vw !important;
+    }
+
+    .item-detail h3{
+        font-size: 4vw !important;
+    }
+
+    .item-detail .total-price{
+        margin-top: auto !important;
+    }
+
+    .item-detail .total-price h4{
+        font-size: 3.5vw !important;
+    }
+
+    .item-detail .total-price h3{
+        font-size: 4.5vw !important;
+    }
+
+    .item-detail .d-flex{
+        margin-top: auto !important;
+    }
+
+    .item-detail .add-or-remove h5{
+        font-size: 5vw !important;
+    }
+
+    .item-detail .add-or-remove .less-button,
+    .item-detail .add-or-remove .more-button{
+        width: 7vw;
+        height: 7vw;
+        padding-top: 1px;
+
+    }
+
+    .item-detail .add-or-remove .less-button,
+    .item-detail .add-or-remove .more-button{
+        font-size: 2.5vw;
+        margin-bottom: 10px;
+    }
+
+    .items-number-notif{
+        height: 11vw !important;
+        font-size: 3.5vw !important;
+        text-align: center !important;
+        justify-content: center !important;
+        padding-top: 3vw !important;
+    }
+
+    .remove-item i{
+        font-size: 6vw;
+        margin-right: 0;
+    }
+
+    .checkout-window{
+        margin-top: 20vw;
+        max-width: 100%;
+        margin-left: 0 !important;
+    }
+
+    .btn-checkout{
+        margin-left: 2% !important;
+    }
+
+    .pay-now{
+        margin-left: 25% !important;
+        margin-top: 40px !important;
+    }
 }
 
 .my-cart-button{
@@ -614,6 +696,13 @@ h2 {
 
 /* PAYMENT PAGE STYLES */
 
+.gray-divisor{
+    width: 100%;
+    background-color: rgb(207, 207, 207);
+    height: 2px;
+    margin-bottom: 20px;
+}
+
 .cart-item{
     background-color: #E8E8E8;
     width: 200px;
@@ -631,6 +720,8 @@ h2 {
     font-weight: 400;
     font-size: 23px;
     float: right;
+    margin-right: 40px;
+
 }
 
 .product-price{
@@ -869,17 +960,16 @@ h2 {
 
 .pay-now{
     display: flex;
-    margin-top: 20px;
+    margin-top: 100px;
     font-size: 22px;
     border-style: none;
-    padding: 15px 40px;
+    padding: 12px 50px;
     background-color: #316639;
     border-radius: 30px;
     color: white;
     font-family: 'League Spartan';
     cursor: pointer;
-    justify-content: center;
-    text-align: center;
+    margin-left: 40%;
 }
 
 .select{
@@ -977,6 +1067,7 @@ h2 {
     align-items: center;
     float: left;
     margin-right: 20px;
+    margin-top: 20px;
 }
 
 .item-picture{
@@ -984,7 +1075,7 @@ h2 {
     border-radius: 30px;
     height: 225px;
     width: 200px;
-    padding: 20px 20px;
+    padding: 20px 15px;
 }
 
 .item-picture img{
@@ -1004,6 +1095,7 @@ h2 {
     display: flex;
     flex-direction: column;
     height: 225px;
+    margin-top: 20px;
 }
 
 .item-detail h3{
@@ -1014,9 +1106,58 @@ h2 {
 .checkout-window{
     padding-top: 30px;
     background-color: #316639;
-    height: 400px;
+    height: auto;
     width: 400px;
     border-radius: 30px;
     color: white;
     font-family: 'League Spartan';
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin-left: 25%;
+}
+
+.item-detail .d-flex{
+    max-width: 100%;
+}
+
+.checkout-window .white-line{
+    background-color: white;
+    width: 50%;
+    height: 4px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+
+.checkout-window h2{
+    position: relative;
+    color: white;
+    font-family: 'League Spartan';
+    font-size: 23px;
+    float: left;
+}
+
+.checkout-window h3{
+    position: relative;
+    color: white;
+    font-family: 'League Spartan';
+    font-size: 18px;
+    font-weight: 300;
+    float: right;
+}
+
+.btn-checkout{
+    background-color: white;;
+    color:#316639;
+    font-family: 'League Spartan';
+    padding: 10px 50px;
+    font-size: 20px;
+    border-radius: 30px;
+    border-style: none;
+    font-weight: 500;
+    margin-left: 25%;
+    cursor: pointer;
 }
