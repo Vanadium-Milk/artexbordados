@@ -289,6 +289,25 @@ h2 {
     margin-left: auto;
 }
 
+.my-cart-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border-style: none;
+    cursor: pointer;
+    padding-left: 2.5px;
+}
+
+.my-cart-link{
+    margin-left: auto;
+}
+
 .hoodies-button{
     margin-right: 20px;
     text-align: center;
@@ -617,6 +636,11 @@ h2 {
     .pay-now{
         margin-left: 25% !important;
         margin-top: 40px !important;
+    }
+
+    .thank-you img{
+        width: 28vw;
+        height: 28vw;
     }
 }
 
@@ -1159,5 +1183,34 @@ h2 {
     border-style: none;
     font-weight: 500;
     margin-left: 25%;
+    cursor: pointer;
+}
+
+.thank-you{
+    margin-top: 150px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'League Spartan';
+    margin-bottom: 150px;
+}
+
+.thank-you img{
+    max-width: 150px;
+    max-height: 150px;
+    margin-bottom: 50px;
+}
+
+.back-to-home{
+    margin-top: 50px;
+    color: white;
+    background-color: #316639;
+    font-family: 'League Spartan';
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    border-style: none;
     cursor: pointer;
 }
