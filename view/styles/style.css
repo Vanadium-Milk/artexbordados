@@ -33,6 +33,10 @@
     font-family: 'League Spartan';
 }
 
+.column-title {
+    text-align: center;
+}
+
 .footer h3,
 .footer h5,
 .footer h6 {
@@ -1222,4 +1226,33 @@ h2 {
     font-weight: 500;
     border-style: none;
     cursor: pointer;
+}
+
+th, td {
+    border: 1px solid rgb(138, 138, 138);
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+    background-color: white;
+    font-family: 'League Spartan';
+    padding: 4px;
+    height: 40px;
+}
+
+table {
+    margin: 0px;
+}
+
+.nopad-td {
+    padding: 0px;
+    padding-left: 4px;
+    background-color: transparent;
+    border: none;
+}
+
+.dashb-button {
+    border: none;
+    background-color: #44754b;
+    border-radius: 5px;
+    color: white;
 }

@@ -1,307 +1,306 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS -->
+    <link rel="stylesheet" href="view/styles/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Artex</title>
+  </head>
 
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- CSS -->
-  <link rel="stylesheet" href="view/styles/style.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <title>Artex</title>
-</head>
+  <header class="header">
+    <img class="logo-picture" src="view/images/logo.png" alt="" width="80px;" height="80px;">
+    <h3 style="padding-top:10px; padding-left: 5px; font-size: 30px;">Artex</h3>
+    
+    <button class="button search-button">
+      <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #316639;"></i>
+    </button>
+  </header>
 
-<header class="header">
-  <img class="logo-picture" src="view/images/logo.png" alt="" width="80px;" height="80px;">
-  <h3 style="padding-top:10px; padding-left: 5px; font-size: 30px;">Artex</h3>
-  
-  <button class="button search-button">
-    <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #316639;"></i>
-  </button>
-</header>
+  <body>
+    <h1 style="text-align: center; font-family: 'League Spartan'; font-size: 45px; padding-top:40px; color: #316639;">Welcome!</h1>
 
-<body>
-  <h1 style="text-align: center; font-family: 'League Spartan'; font-size: 45px; padding-top:40px; color: #316639;">Welcome!</h1>
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-6 mb-4">
+          <div class="hoodie-category">
+            <h2 class="section-title">Hoodies</h2>
+            <form action="view/store_page.html" method="get"><button class="button button-see-all">See All</button></form>
+            <div class="hoodie-picture">
+              <img src="view/images/hoodie.png" width="150px" height="170px;">
+            </div>
+          </div>
 
-  <div class="container">
-    <div class="row mb-4">
-      <div class="col-md-6 mb-4">
-        <div class="hoodie-category">
-          <h2 class="section-title">Hoodies</h2>
-          <form action="view/store_page.html" method="get"><button class="button button-see-all">See All</button></form>
-          <div class="hoodie-picture">
-            <img src="view/images/hoodie.png" width="150px" height="170px;">
+          <!-- Hoodies Carousel -->
+          <div id="carouselHoodies" class="carousel slide" data-ride="carousel" style="margin-top: 65px; position: relative;">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselHoodies" data-slide-to="0">
+                <img src="view/images/indicator-dot.png" alt="Indicador 1">
+              </li>
+              <li data-target="#carouselHoodies" data-slide-to="1"></li>
+              <li data-target="#carouselHoodies" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="d-block" src="view/images/hoodies-embroideries/hoodie-penguin.png" alt="Hoodie 2" style="width: 40%;">
+                  <img class="d-block" src="view/images/hoodies-embroideries/hoodie-levi.png" alt="Hoodie Other" style="width: 40%;">
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="d-block" src="view/images/hoodies-embroideries/hoodie-dragon.png" alt="Hoodie Another" style="width: 40%;">
+                  <img class="d-block" src="view/images/hoodies-embroideries/hoodie-gorillaz.png" alt="Hoodie 1" style="width: 40%;">
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="d-block" src="view/images/hoodies-embroideries/hoodie-shanks.png" alt="Hoodie 3" style="width: 40%;">
+                  <img class="d-block" src="view/images/hoodies-embroideries/hoodie-deadpool.png" alt="Hoodie More" style="width: 40%;">
+                </div>
+              </div>
+            </div>
+
+            <a class="carousel-control-next custom-next" href="#carouselHoodies" role="button" data-slide="next">
+              <img src="view/images/arrow-right.png" alt="Next">
+            </a>
+
+            <a class="carousel-control-prev custom-prev" href="#carouselHoodies" role="button" data-slide="prev">
+              <img src="view/images/arrow-left.png" alt="Prev">
+            </a>
+
           </div>
         </div>
 
-        <!-- Hoodies Carousel -->
-        <div id="carouselHoodies" class="carousel slide" data-ride="carousel" style="margin-top: 65px; position: relative;">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselHoodies" data-slide-to="0">
-              <img src="view/images/indicator-dot.png" alt="Indicador 1">
-            </li>
-            <li data-target="#carouselHoodies" data-slide-to="1"></li>
-            <li data-target="#carouselHoodies" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="d-flex justify-content-center align-items-center">
-                <img class="d-block" src="view/images/hoodies-embroideries/hoodie-penguin.png" alt="Hoodie 2" style="width: 40%;">
-                <img class="d-block" src="view/images/hoodies-embroideries/hoodie-levi.png" alt="Hoodie Other" style="width: 40%;">
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center align-items-center">
-                <img class="d-block" src="view/images/hoodies-embroideries/hoodie-dragon.png" alt="Hoodie Another" style="width: 40%;">
-                <img class="d-block" src="view/images/hoodies-embroideries/hoodie-gorillaz.png" alt="Hoodie 1" style="width: 40%;">
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center align-items-center">
-                <img class="d-block" src="view/images/hoodies-embroideries/hoodie-shanks.png" alt="Hoodie 3" style="width: 40%;">
-                <img class="d-block" src="view/images/hoodies-embroideries/hoodie-deadpool.png" alt="Hoodie More" style="width: 40%;">
-              </div>
+        <div class="col-md-6 mb-4">
+          <div class="tshirt-category">
+            <h2 class="section-title">T-Shirts</h2>
+            <form action="view/store_page.html" method="get"><button class="button button-see-all">See All</button></form>
+              <div class="tshirt-picture">
+              <img src="view/images/t-shirt.png" width="150px" height="170px">
             </div>
           </div>
 
-          <a class="carousel-control-next custom-next" href="#carouselHoodies" role="button" data-slide="next">
-            <img src="view/images/arrow-right.png" alt="Next">
-          </a>
+          <!-- T-Shirts Carousel -->
+          <div id="carouselT-Shirts" class="carousel slide" data-ride="carousel" style="margin-top: 65px; position: relative;">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselT-Shirts" data-slide-to="0"></li>
+              <li data-target="#carouselT-Shirts" data-slide-to="1"></li>
+              <li data-target="#carouselT-Shirts" data-slide-to="2"></li>
+            </ol>
 
-          <a class="carousel-control-prev custom-prev" href="#carouselHoodies" role="button" data-slide="prev">
-            <img src="view/images/arrow-left.png" alt="Prev">
-          </a>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-aztec.png" alt="Hoodie 1" style="width: 40%;">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-anime1.png" alt="Hoodie Other" style="width: 40%;">
+                </div>
+              </div>
 
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-penguin.png" alt="Hoodie 2" style="width: 40%;">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-nemesis.png" alt="Hoodie Another" style="width: 40%;">
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-anime2.png" alt="Hoodie 3" style="width: 40%;">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-shanks.png" alt="Hoodie More" style="width: 40%;">
+                </div>
+              </div>
+            </div>
+
+            <a class="carousel-control-next custom-next" href="#carouselT-Shirts" role="button" data-slide="next">
+              <img src="view/images/arrow-right.png" alt="Next">
+            </a>
+
+            <a class="carousel-control-prev custom-prev" href="#carouselT-Shirts" role="button" data-slide="prev">
+              <img src="view/images/arrow-left.png" alt="Prev">
+            </a>
+
+          </div>
         </div>
       </div>
 
-      <div class="col-md-6 mb-4">
-        <div class="tshirt-category">
-          <h2 class="section-title">T-Shirts</h2>
-          <form action="view/store_page.html" method="get"><button class="button button-see-all">See All</button></form>
-            <div class="tshirt-picture">
-            <img src="view/images/t-shirt.png" width="150px" height="170px">
+      <div class="row mb-4">
+        <div class="col-md-6 mb-4">
+          <div class="long-sleeved-category">
+            <h2 class="section-title">Long-Sleeved</h2>
+            <form action="view/store_page.html" method="get"><button class="button button-see-all">See All</button></form>
+            <div class="shirt-picture">
+              <img src="view/images/shirt.png" width="130px" height="150px">
+            </div>
+          </div>
+
+          <div id="carousel-sleeved" class="carousel slide" data-ride="carousel" style="margin-top: 65px; position: relative;">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-sleeved" data-slide-to="0"></li>
+              <li data-target="#carousel-sleeved" data-slide-to="1"></li>
+              <li data-target="#carousel-sleeved" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="d-block" src="view/images/sleeved-embroideries/monster-sleeved.png" alt="Hoodie 1" style="width: 40%;">
+                  <img class="d-block" src="view/images/sleeved-embroideries/princess-sleeved.png" alt="Hoodie Other" style="width: 40%;">
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="d-block" src="view/images/sleeved-embroideries/anime-sleeved.png" alt="Hoodie 2" style="width: 40%;">
+                  <img class="d-block" src="view/images/sleeved-embroideries/monster-sleeved.png" alt="Hoodie Another" style="width: 40%;">
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="d-block" src="view/images/sleeved-embroideries/shanks-sleeved.png" alt="Hoodie 3" style="width: 40%;">
+                  <img class="d-block" src="view/images/sleeved-embroideries/levi-sleeved.png" alt="Hoodie More" style="width: 40%;">
+                </div>
+              </div>
+            </div>
+
+            <a class="carousel-control-next custom-next" href="#carousel-sleeved" role="button" data-slide="next">
+              <img src="view/images/arrow-right.png" alt="Next">
+            </a>
+
+            <a class="carousel-control-prev custom-prev" href="#carousel-sleeved" role="button" data-slide="prev">
+              <img src="view/images/arrow-left.png" alt="Prev">
+            </a>
           </div>
         </div>
 
-        <!-- T-Shirts Carousel -->
-        <div id="carouselT-Shirts" class="carousel slide" data-ride="carousel" style="margin-top: 65px; position: relative;">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselT-Shirts" data-slide-to="0"></li>
-            <li data-target="#carouselT-Shirts" data-slide-to="1"></li>
-            <li data-target="#carouselT-Shirts" data-slide-to="2"></li>
-          </ol>
-
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="d-flex justify-content-center align-items-center">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-aztec.png" alt="Hoodie 1" style="width: 40%;">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-anime1.png" alt="Hoodie Other" style="width: 40%;">
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center align-items-center">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-penguin.png" alt="Hoodie 2" style="width: 40%;">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-nemesis.png" alt="Hoodie Another" style="width: 40%;">
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center align-items-center">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-anime2.png" alt="Hoodie 3" style="width: 40%;">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-shanks.png" alt="Hoodie More" style="width: 40%;">
-              </div>
+        <div class="col-md-6 mb-4">
+          <div class="caps-category">
+            <h2 class="section-title">Caps</h2>
+            <form action="view/store_page.html" method="get"><button class="button button-see-all">See All</button></form>
+            <div class="cap-picture">
+              <img src="view/images/cap.png" width="150px" height="120px" alt="cap">
             </div>
           </div>
 
-          <a class="carousel-control-next custom-next" href="#carouselT-Shirts" role="button" data-slide="next">
-            <img src="view/images/arrow-right.png" alt="Next">
-          </a>
+          <div id="carousel-caps" class="carousel slide" data-ride="carousel" style="margin-top: 65px; position: relative;">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-caps" data-slide-to="0"></li>
+              <li data-target="#carousel-caps" data-slide-to="1"></li>
+              <li data-target="#carousel-caps" data-slide-to="2"></li>
+            </ol>
 
-          <a class="carousel-control-prev custom-prev" href="#carouselT-Shirts" role="button" data-slide="prev">
-            <img src="view/images/arrow-left.png" alt="Prev">
-          </a>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-aztec.png" alt="Hoodie 1" style="width: 40%;">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-anime1.png" alt="Hoodie Other" style="width: 40%;">
+                </div>
+              </div>
 
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-penguin.png" alt="Hoodie 2" style="width: 40%;">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-nemesis.png" alt="Hoodie Another" style="width: 40%;">
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-anime2.png" alt="Hoodie 3" style="width: 40%;">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-shanks.png" alt="Hoodie More" style="width: 40%;">
+                </div>
+              </div>
+            </div>
+
+            <a class="carousel-control-next custom-next" href="#carousel-caps" role="button" data-slide="next">
+              <img src="view/images/arrow-right.png" alt="Next">
+            </a>
+
+            <a class="carousel-control-prev custom-prev" href="#carousel-caps" role="button" data-slide="prev">
+              <img src="view/images/arrow-left.png" alt="Prev">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-6 mb-4">
+          <div class="sleeveless-category">
+            <h2 class="section-title">Sleeveless</h2>
+            <form action="view/store_page.html" method="get"><button class="button button-see-all">See All</button></form>
+            <div class="sleeveless-picture">
+              <img src="view/images/sleeveless.png" width="130px" height="170px" alt="sleeveñess">
+            </div>
+          </div>
+
+          <div id="carousel-sleeveless" class="carousel slide" data-ride="carousel" style="margin-top: 65px; position: relative;">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-sleeveless" data-slide-to="0"></li>
+              <li data-target="#carousel-sleeveless" data-slide-to="1"></li>
+              <li data-target="#carousel-sleeveless" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-aztec.png" alt="Hoodie 1" style="width: 40%;">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-anime1.png" alt="Hoodie Other" style="width: 40%;">
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-penguin.png" alt="Hoodie 2" style="width: 40%;">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-nemesis.png" alt="Hoodie Another" style="width: 40%;">
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-anime2.png" alt="Hoodie 3" style="width: 40%;">
+                  <img class="d-block" src="view/images/tshirts-embroideries/tshirt-shanks.png" alt="Hoodie More" style="width: 40%;">
+                </div>
+              </div>
+            </div>
+
+            <a class="carousel-control-next custom-next" href="#carousel-sleeveless" role="button" data-slide="next">
+              <img src="view/images/arrow-right.png" alt="Next">
+            </a>
+
+            <a class="carousel-control-prev custom-prev" href="#carousel-sleeveless" role="button" data-slide="prev">
+              <img src="view/images/arrow-left.png" alt="Prev">
+            </a>
+          </div>
+        </div>
         </div>
       </div>
     </div>
 
-    <div class="row mb-4">
-      <div class="col-md-6 mb-4">
-        <div class="long-sleeved-category">
-          <h2 class="section-title">Long-Sleeved</h2>
-          <form action="view/store_page.html" method="get"><button class="button button-see-all">See All</button></form>
-          <div class="shirt-picture">
-            <img src="view/images/shirt.png" width="130px" height="150px">
-          </div>
-        </div>
+    <!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
 
-        <div id="carousel-sleeved" class="carousel slide" data-ride="carousel" style="margin-top: 65px; position: relative;">
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-sleeved" data-slide-to="0"></li>
-            <li data-target="#carousel-sleeved" data-slide-to="1"></li>
-            <li data-target="#carousel-sleeved" data-slide-to="2"></li>
-          </ol>
-
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="d-flex justify-content-center align-items-center">
-                <img class="d-block" src="view/images/sleeved-embroideries/monster-sleeved.png" alt="Hoodie 1" style="width: 40%;">
-                <img class="d-block" src="view/images/sleeved-embroideries/princess-sleeved.png" alt="Hoodie Other" style="width: 40%;">
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center align-items-center">
-                <img class="d-block" src="view/images/sleeved-embroideries/anime-sleeved.png" alt="Hoodie 2" style="width: 40%;">
-                <img class="d-block" src="view/images/sleeved-embroideries/monster-sleeved.png" alt="Hoodie Another" style="width: 40%;">
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center align-items-center">
-                <img class="d-block" src="view/images/sleeved-embroideries/shanks-sleeved.png" alt="Hoodie 3" style="width: 40%;">
-                <img class="d-block" src="view/images/sleeved-embroideries/levi-sleeved.png" alt="Hoodie More" style="width: 40%;">
-              </div>
-            </div>
-          </div>
-
-          <a class="carousel-control-next custom-next" href="#carousel-sleeved" role="button" data-slide="next">
-            <img src="view/images/arrow-right.png" alt="Next">
-          </a>
-
-          <a class="carousel-control-prev custom-prev" href="#carousel-sleeved" role="button" data-slide="prev">
-            <img src="view/images/arrow-left.png" alt="Prev">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-md-6 mb-4">
-        <div class="caps-category">
-          <h2 class="section-title">Caps</h2>
-          <form action="view/store_page.html" method="get"><button class="button button-see-all">See All</button></form>
-          <div class="cap-picture">
-            <img src="view/images/cap.png" width="150px" height="120px" alt="cap">
-          </div>
-        </div>
-
-        <div id="carousel-caps" class="carousel slide" data-ride="carousel" style="margin-top: 65px; position: relative;">
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-caps" data-slide-to="0"></li>
-            <li data-target="#carousel-caps" data-slide-to="1"></li>
-            <li data-target="#carousel-caps" data-slide-to="2"></li>
-          </ol>
-
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="d-flex justify-content-center align-items-center">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-aztec.png" alt="Hoodie 1" style="width: 40%;">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-anime1.png" alt="Hoodie Other" style="width: 40%;">
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center align-items-center">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-penguin.png" alt="Hoodie 2" style="width: 40%;">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-nemesis.png" alt="Hoodie Another" style="width: 40%;">
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center align-items-center">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-anime2.png" alt="Hoodie 3" style="width: 40%;">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-shanks.png" alt="Hoodie More" style="width: 40%;">
-              </div>
-            </div>
-          </div>
-
-          <a class="carousel-control-next custom-next" href="#carousel-caps" role="button" data-slide="next">
-            <img src="view/images/arrow-right.png" alt="Next">
-          </a>
-
-          <a class="carousel-control-prev custom-prev" href="#carousel-caps" role="button" data-slide="prev">
-            <img src="view/images/arrow-left.png" alt="Prev">
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row mb-4">
-      <div class="col-md-6 mb-4">
-        <div class="sleeveless-category">
-          <h2 class="section-title">Sleeveless</h2>
-          <form action="view/store_page.html" method="get"><button class="button button-see-all">See All</button></form>
-          <div class="sleeveless-picture">
-            <img src="view/images/sleeveless.png" width="130px" height="170px" alt="sleeveñess">
-          </div>
-        </div>
-
-        <div id="carousel-sleeveless" class="carousel slide" data-ride="carousel" style="margin-top: 65px; position: relative;">
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-sleeveless" data-slide-to="0"></li>
-            <li data-target="#carousel-sleeveless" data-slide-to="1"></li>
-            <li data-target="#carousel-sleeveless" data-slide-to="2"></li>
-          </ol>
-
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="d-flex justify-content-center align-items-center">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-aztec.png" alt="Hoodie 1" style="width: 40%;">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-anime1.png" alt="Hoodie Other" style="width: 40%;">
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center align-items-center">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-penguin.png" alt="Hoodie 2" style="width: 40%;">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-nemesis.png" alt="Hoodie Another" style="width: 40%;">
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center align-items-center">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-anime2.png" alt="Hoodie 3" style="width: 40%;">
-                <img class="d-block" src="view/images/tshirts-embroideries/tshirt-shanks.png" alt="Hoodie More" style="width: 40%;">
-              </div>
-            </div>
-          </div>
-
-          <a class="carousel-control-next custom-next" href="#carousel-sleeveless" role="button" data-slide="next">
-            <img src="view/images/arrow-right.png" alt="Next">
-          </a>
-
-          <a class="carousel-control-prev custom-prev" href="#carousel-sleeveless" role="button" data-slide="prev">
-            <img src="view/images/arrow-left.png" alt="Prev">
-          </a>
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-
-</body>
-<br><br><br>
+  </body>
+  <br><br><br>
 
   <!-- Footer -->
   <footer class="footer">
