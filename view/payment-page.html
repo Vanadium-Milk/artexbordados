@@ -22,9 +22,11 @@
     </a>
     <h3 style="padding-top:10px; padding-left: 5px; font-size: 30px;">Artex</h3>
     
-    <button class="button search-button">
-      <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #316639;"></i>
-    </button>
+    <form action="store_page.html" class="my-cart-link">
+      <button class="button search-button">
+        <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #316639;"></i>
+      </button>
+    </form>
   </header>
 
   <body>
@@ -70,49 +72,28 @@
         </div>
 
         <div class="gray-divisor" style="margin-top: 0;"></div>
-        <h1 style="font-family: 'League Spartan'; font-size: 30px; text-align: center; margin-top: 40px; color: #000000; margin-bottom: 20px;">Shipment Details</h1>
+        <h1 style="font-family: 'League Spartan'; font-size: 30px; text-align: center; margin-top: 40px; color: #000000; margin-bottom: 1px;">Shipment Details</h1>
 
-        <form action="" method="get" class="full-name">
-          <input type="text" placeholder="Full Name" name="q">
-        </form>
-
-        <form action="" method="get" class="email">
-          <input type="text" placeholder="Enter your Email" name="q">
-        </form>
-
-        <form action="" method="get" class="phone-number">
-          <input type="number" placeholder="Phone Number" name="q">
-        </form>
-
-        <form action="" method="get" class="state">
-          <input type="text" placeholder="State" name="q">
-        </form>
-
-        <form action="" method="get" class="city">
-          <input type="text" placeholder="City" name="q">
-        </form>
-
-        <form action="" method="get" class="address">
-          <input type="text" placeholder="Address" name="q">
+        <form action="" method="get" class="shipment-details">
+          <input type="text" placeholder="Full Name" name="full-name"><br>
+          <input type="text" placeholder="Email" name="email"><br>
+          <input type="number" placeholder="Phone Number" name="phone-number"><br>
+          <input type="text" placeholder="State" name="state"><br>
+          <input type="text" placeholder="City" name="city"><br>
+          <input type="text" placeholder="Address" name="address"><br>
         </form>
         <h5 style="text-align: center; font-family: 'League Spartan';"><i class="fa-solid fa-circle-exclamation" style="color:#316639; margin-right:10px;"></i>Please verify that your address is correct and complete.</h5>
       
         <div class="gray-divisor" style="margin-top: 30px;"></div>
-        <h1 style="font-family: 'League Spartan'; font-size: 30px; text-align: center; margin-top: 30px; color: #000000; margin-bottom: 50px;">Card Details</h1>
-        
-        <h5 style="text-align:left; font-family: 'League Spartan';"></h5>
-        <form action="" method="get" class="card-number">
-          <input type="number" placeholder="0000 0000 0000 0000" name="q">
+        <h1 style="font-family: 'League Spartan'; font-size: 30px; text-align: center; margin-top: 30px; color: #000000; margin-bottom: 1px;">Card Details</h1>
+
+        <form action="" method="get" class="card-details">
+          <input type="text" placeholder="0000 0000 0000 0000" name="q" style="width: 90%;">
+          <br>
+          <input type="number" placeholder="MM/YY" name="q" style="width: 44%; margin-right: 10px;">
+          <input type="number" placeholder="123" name="q" style="width: 44%;">
         </form>
-        
-        <form action="" method="get" class="expiry">
-          <input type="number" placeholder="MM/YY" name="q">
-        </form>
-        
-        <h5 style="text-align:left; font-family: 'League Spartan';"></h5>
-        <form action="" method="get" class="cvv">
-          <input type="number" placeholder="123" name="q">
-        </form>
+      
 
         <label class="checkbox-terms">
           <input type="checkbox" id="cbox1" value="first_checkbox"/> I agree with Artex's Terms and Conditions.

@@ -299,7 +299,7 @@ h2 {
     height: 60px;
     border-style: none;
     cursor: pointer;
-    margin-left: auto;
+    padding-left: 2.5px;
 }
 
 .my-cart-btn {
@@ -368,6 +368,11 @@ h2 {
     color:white;
 }
 
+.tshirts-button:focus {
+    background-color:#316639;
+    color:white;
+}
+
 .sleeves-button{
     text-align: center;
     margin-right: 20px;
@@ -385,6 +390,11 @@ h2 {
 }
 
 .sleeves-button:hover {
+    background-color:#316639;
+    color:white;
+}
+
+.sleeves-button:focus {
     background-color:#316639;
     color:white;
 }
@@ -410,6 +420,11 @@ h2 {
     color:white;
 }
 
+.caps-button:focus {
+    background-color:#316639;
+    color:white;
+}
+
 .sleeveless-button{
     text-align: center;
     margin-right: 20px;
@@ -427,6 +442,11 @@ h2 {
 }
 
 .sleeveless-button:hover {
+    background-color:#316639;
+    color:white;
+}
+
+.sleeveless-button:focus {
     background-color:#316639;
     color:white;
 }
@@ -642,10 +662,6 @@ h2 {
         margin-left: 0 !important;
     }
 
-    .btn-checkout{
-        margin-left: 2% !important;
-    }
-
     .pay-now{
         margin-left: 25% !important;
         margin-top: 40px !important;
@@ -719,6 +735,7 @@ h2 {
 
 .color-options{
     margin-top: 50px;
+    max-width: 500px;
 }
 
 .color-circle{
@@ -770,220 +787,64 @@ h2 {
     bottom: 0;
 }
 
-.full-name {
-    margin: 5% auto;
+.shipment-details {
+    position: relative;
     width: 90%;
     max-width: 1000px;
     background: #ffffff;
-    display: flex;
-    align-items: center;
     border-radius: 60px;
     padding: 8px 12px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 4%;
 }
 
-.full-name input {
-    flex: 1;
+.shipment-details input {
     background: transparent;
     border: solid 2px;
     border-color:#316639;
     border-radius: 20px;
     padding: 13px 20px;
-    font-size: 20px;
-    color: rgb(110, 110, 110);
+    color: black;
     font-family: 'League Spartan';
-}
-
-.email {
-    margin: 3% auto;
-    width: 90%;
-    max-width: 1000px;
-    background: #ffffff;
-    display: flex;
+    margin-top: 20px;
+    width: 100%;
     align-items: center;
-    border-radius: 60px;
-    padding: 10px 12px;
-    outline: 0;
 }
 
-.email input {
-    flex: 1;
-    background: transparent;
-    border: solid 2px;
-    border-color:#316639;
-    border-radius: 20px;
-    padding: 13px 20px;
-    font-size: 20px;
-    color: rgb(110, 110, 110);
-    font-family: 'League Spartan';
-}
-
-.phone-number {
-    margin: 3% auto;
+.card-number{
+    position: relative;
     width: 90%;
-    max-width: 1000px;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 10px 12px;
-    outline: 0;
 }
 
-.phone-number input {
-    flex: 1;
-    background: transparent;
-    border: solid 2px;
-    border-color:#316639;
-    border-radius: 20px;
-    padding: 13px 20px;
-    font-size: 20px;
-    color: rgb(110, 110, 110);
-    font-family: 'League Spartan';
+.card-number img{
+    position: absolute;
 }
 
-.state {
-    margin: 3% auto;
-    width: 90%;
-    max-width: 1000px;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 10px 12px;
-    outline: 0;
-}
-
-.state input {
-    flex: 1;
-    background: transparent;
-    border: solid 2px;
-    border-color:#316639;
-    border-radius: 20px;
-    padding: 13px 20px;
-    font-size: 20px;
-    color: rgb(110, 110, 110);
-    font-family: 'League Spartan';
-}
-
-.city {
-    margin: 3% auto;
-    width: 90%;
-    max-width: 1000px;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 10px 12px;
-    outline: 0;
-}
-
-.city input {
-    flex: 1;
-    background: transparent;
-    border: solid 2px;
-    border-color:#316639;
-    border-radius: 20px;
-    padding: 13px 20px;
-    font-size: 20px;
-    color: rgb(110, 110, 110);
-    font-family: 'League Spartan';
-}
-
-.address {
-    margin: 1% auto;
-    width: 90%;
-    max-width: 1000px;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 10px 12px;
-    outline: 0;
-}
-
-.address input {
-    flex: 1;
-    background: transparent;
-    border: solid 2px;
-    border-color:#316639;
-    border-radius: 20px;
-    padding: 13px 20px;
-    font-size: 20px;
-    color: rgb(110, 110, 110);
-    font-family: 'League Spartan';
-}
-
-.card-number {
-    margin: 1% auto;
+.card-details {
     width: 100%;
     max-width: 1000px;
     background: #ffffff;
-    display: flex;
     align-items: center;
     border-radius: 60px;
     padding: 10px 12px;
     outline: 0;
+    text-align: center;
 }
 
-.card-number input {
-    flex: 1;
+.card-details input {
     background: transparent;
     border: solid 2px;
     border-color:#316639;
     border-radius: 20px;
     padding: 13px 20px;
-    font-size: 20px;
-    color: rgb(110, 110, 110);
+    margin-top: 20px;
+    color: black;
     font-family: 'League Spartan';
 }
 
-.expiry {
-    margin: 1% auto;
-    width: 90%;
-    max-width: 1000px;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 10px 12px;
-    outline: 0;
-}
-
-.expiry input {
-    flex: 1;
-    background: transparent;
-    border: solid 2px;
-    border-color:#316639;
-    border-radius: 20px;
-    padding: 13px 20px;
-    font-size: 20px;
+::placeholder{
     color: rgb(110, 110, 110);
-    font-family: 'League Spartan';
-}
-
-.cvv {
-    margin: 1% auto;
-    width: 90%;
-    max-width: 1000px;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 10px 12px;
-    outline: 0;
-}
-
-.cvv input {
-    flex: 1;
-    background: transparent;
-    border: solid 2px;
-    border-color:#316639;
-    border-radius: 20px;
-    padding: 13px 20px;
-    font-size: 20px;
-    color: rgb(110, 110, 110);
-    font-family: 'League Spartan';
 }
 
 .checkbox-terms {
