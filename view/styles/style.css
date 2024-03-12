@@ -735,7 +735,11 @@ h2 {
 
 .color-options{
     margin-top: 50px;
-    max-width: 500px;
+    max-width: 100%;
+    width: 85%;
+    margin-left: 7%;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .color-circle{
@@ -743,7 +747,8 @@ h2 {
     height: 30px;
     border: 0;
     border-radius: 50%;
-    float: left;
+    vertical-align: middle;
+    display: inline-block;
     margin-right: 10px;
     cursor: pointer;
 }
