@@ -19,7 +19,7 @@
         var quantity = parseInt(quantityElement.textContent);
         quantityElement.textContent = --start;
         var decrement_button = document.getElementById('less');
-        if (start == 0) {
+        if (start == 1) {
             decrement_button.disabled = true;
         }
         update_price();
