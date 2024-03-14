@@ -1,6 +1,6 @@
 var start1 = 1;
 var start2 = 1;
-var itemPrice1 = 600;
+var itemPrice1 = 550;
 var itemPrice2 = 250;
 
 window.onload = function() {
