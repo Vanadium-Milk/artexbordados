@@ -41,7 +41,7 @@
           </div>
           <div class="product-name">
             <h2>Deadpool</h2>
-            <h3>$550 MXN</h3>
+            <h3 id="original-p"></h3>
           </div>
         </div>
 
@@ -88,9 +88,9 @@
             </form>
           
             <div class="add-or-remove mb-0">
-              <button class="button less-button" id="less" onclick="decrease()"><i class="fa-solid fa-minus fa-xl" style="color:#155100;"></i></button>
+              <button class="button less-button" id="less-button" onclick="decrease('quantity', 'price', itemPrice1)"><i class="fa-solid fa-minus fa-xl" style="color:#155100;"></i></button>
               <h5 id="quantity" style="font-family: 'League Spartan'; text-align: center; width: 20px; font-size: 20px;"></h5>
-              <button class="button more-button" id="more" onclick="increment()"><i class="fa-solid fa-plus fa-xl" style="color:#155100;"></i></button>
+              <button class="button more-button" id="more-button" onclick="increment('quantity', 'price', itemPrice1)"><i class="fa-solid fa-plus fa-xl" style="color:#155100;"></i></button>
             </div>
           </div>
 
