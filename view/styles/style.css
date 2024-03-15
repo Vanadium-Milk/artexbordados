@@ -47,6 +47,19 @@
 @media (max-width: 768px) {
     .footer {
         height: auto;
+        text-align: center;
+    }
+
+    .footer h3{
+        margin-left: 0px !important;
+    }
+
+    .footer img{
+        margin-right: 10px !important;
+    }
+
+    .logo-title{
+        margin-top: 200px !important;
     }
 
     .footer .row {
