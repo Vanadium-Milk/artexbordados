@@ -243,10 +243,6 @@ h2 {
     transform: scale(1.1);
 }
 
-.product-card-container:hover {
-    transform: scale(1.05);
-}
-
 .carousel-item img {
     margin-right: 20px;
 }
@@ -339,15 +335,14 @@ h2 {
     margin-left: auto;
 }
 
-.hoodies-button{
+.category-button{
     margin-right: 20px;
     text-align: center;
     font-family: 'League Spartan';
     font-size: 18px;
     color:#316639;
     background-color: white;
-    min-width: 100px;
-    height: 44px;
+    padding: 10px 20px;
     border-radius: 30px;
     border-color: #316639;
     border-style: solid;
@@ -355,116 +350,12 @@ h2 {
     transition: 0.3s;
 }
 
-.hoodies-button:hover {
+.category-button:hover {
     background-color:#316639;
     color:white;
 }
 
-.hoodies-button:focus {
-    background-color:#316639;
-    color:white;
-}
-
-.tshirts-button{
-    text-align: center;
-    margin-right: 20px;
-    font-family: 'League Spartan';
-    font-size: 18px;
-    color:#316639;
-    background-color: white;
-    min-width: 102px;
-    height: 44px;
-    border-radius: 30px;
-    border-color: #316639;
-    border-style: solid;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.tshirts-button:hover {
-    background-color:#316639;
-    color:white;
-}
-
-.tshirts-button:focus {
-    background-color:#316639;
-    color:white;
-}
-
-.sleeves-button{
-    text-align: center;
-    margin-right: 20px;
-    font-family: 'League Spartan';
-    font-size: 18px;
-    color:#316639;
-    background-color: white;
-    min-width: 104px;
-    height: 44px;
-    border-radius: 30px;
-    border-color: #316639;
-    border-style: solid;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.sleeves-button:hover {
-    background-color:#316639;
-    color:white;
-}
-
-.sleeves-button:focus {
-    background-color:#316639;
-    color:white;
-}
-
-.caps-button{
-    text-align: center;
-    margin-right: 20px;
-    font-family: 'League Spartan';
-    font-size: 18px;
-    color:#316639;
-    background-color: white;
-    min-width: 85px;
-    height: 44px;
-    border-radius: 30px;
-    border-color: #316639;
-    border-style: solid;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.caps-button:hover {
-    background-color:#316639;
-    color:white;
-}
-
-.caps-button:focus {
-    background-color:#316639;
-    color:white;
-}
-
-.sleeveless-button{
-    text-align: center;
-    margin-right: 20px;
-    font-family: 'League Spartan';
-    font-size: 18px;
-    color:#316639;
-    background-color: white;
-    min-width: 115px;
-    height: 44px;
-    border-radius: 30px;
-    border-color: #316639;
-    border-style: solid;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.sleeveless-button:hover {
-    background-color:#316639;
-    color:white;
-}
-
-.sleeveless-button:focus {
+.category-button:focus {
     background-color:#316639;
     color:white;
 }
@@ -522,8 +413,13 @@ h2 {
     text-decoration: none;
 }
 
-.product-card-image{
-    padding: 15px 15px;
+.product-card-hoodie{
+    padding: 20% 15px;
+    height: 275px;
+}
+
+.product-card-cap{
+    padding: 30% 15px;
     height: 275px;
 }
 
@@ -691,6 +587,16 @@ h2 {
         width: 28vw;
         height: 28vw;
     }
+
+    .category-button{
+        display: flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .product-card-hoodie, .product-card-cap{
+        height: 220px;
+    }
 }
 
 .my-cart-button{
@@ -722,6 +628,13 @@ h2 {
     margin-bottom: 38%;
     position: absolute;
     width: 27%;
+}
+
+.store-embroidery{
+    position: absolute;
+    width: 25%;
+    margin-top: 10%;
+    margin-left: -47%;
 }
 
 .preview-img {
