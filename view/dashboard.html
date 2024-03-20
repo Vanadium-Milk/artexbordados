@@ -28,96 +28,25 @@
     <!--Orders tab-->
     <div class="container" style="margin-top: 20px;">
         <h2 style="text-align: center; width: 100%;">Orders</h2>
-        <div class="row" style="background-color: rgb(236, 236, 236); padding-top: 20px; padding-bottom: 40px;">
-            <div class="col-lg-4">
-                <h3 class="column-title">Active</h3>
-                <table style="width: 100%;" id="orders-table">
-                    <tbody>
-                        <!--Orders php insertions go here-->
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-lg-4">
-                <h3 class="column-title">In progress</h3>
-                <table style="width: 100%;">
-                    <tr>
-                        <td>27/02/2024</td>
-                        <td>Hoodie</td>
-                        <td>Purple</td>
-                        <td>M</td>
-                        <td>Gengar</td>
-                        <td class="nopad-td">
-                            <button class="dashb-button"><</button>
-                            <button class="dashb-button">></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>28/02/2024</td>
-                        <td>Cap</td>
-                        <td>Blue</td>
-                        <td>N/A</td>
-                        <td>Pumas</td>
-                        <td class="nopad-td">
-                            <button class="dashb-button"><</button>
-                            <button class="dashb-button">></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>29/02/2024</td>
-                        <td>T-Shirt</td>
-                        <td>Black</td>
-                        <td>XS</td>
-                        <td>Kuromi</td>
-                        <td class="nopad-td">
-                            <button class="dashb-button"><</button>
-                            <button class="dashb-button">></button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-lg-4">
-                <h3 class="column-title">Done</h3>
-                <table style="width: 100%;">
-                    <tr>
-                        <td>24/02/2024</td>
-                        <td>Long-S</td>
-                        <td>Pink</td>
-                        <td>XL</td>
-                        <td>Mario</td>
-                        <td class="nopad-td">
-                            <button class="dashb-button"><</button>
-                            <button class="dashb-button" style="background-color: rgb(177, 177, 70);">
-                                <i class="fa-solid fa-box-archive"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>25/02/2024</td>
-                        <td>Hoodie</td>
-                        <td>Green</td>
-                        <td>XXL</td>
-                        <td>Weed</td>
-                        <td class="nopad-td">
-                            <button class="dashb-button"><</button>
-                            <button class="dashb-button" style="background-color: rgb(177, 177, 70);">
-                                <i class="fa-solid fa-box-archive"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>26/02/2024</td>
-                        <td>T-Shirt</td>
-                        <td>Orange</td>
-                        <td>M</td>
-                        <td>Naruto</td>
-                        <td class="nopad-td">
-                            <button class="dashb-button"><</button>
-                            <button class="dashb-button" style="background-color: rgb(177, 177, 70);">
-                                <i class="fa-solid fa-box-archive"></i>
-                            </button>
-                        </td>
-                    </tr>
-                </table>
+        <div style="background-color: rgb(236, 236, 236); padding-top: 20px; padding-bottom: 40px;">
+            <div class="row" style="width: 100%; margin: 10px;">
+                <div class="col-md-12">
+                    <h3 class="column-title">Active</h3>
+                    <table style="width: 100%;" id="orders-table">
+                        <thead>
+                            <th>ID</th>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Color</th>
+                            <th>Size</th>
+                            <th>Embroidery</th>
+                            <th>Status</th>
+                        </thead>
+                        <tbody>
+                            <!--Orders php insertions go here-->
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -125,402 +54,162 @@
     <!--Inventory tab-->
     <div class="container" style="margin-top: 20px;">
         <h2 style="text-align: center; width: 100%;">Inventory</h2>
-        <div class="row" style="background-color: rgb(236, 236, 236); padding-top: 20px; padding-bottom: 40px;">
+        <div class="row" style="background-color: rgb(236, 236, 236); padding-top: 20px; padding-bottom: 20px;">
             <div class="col-md-12">
                 
                 <!--Stock table-->
                 <h3 class="column-title">Stock</h3>
-                <table style="width: 100%;" id="inventory-table">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Type</th>
-                            <th>Color</th>
-                            <th>Size</th>
-                            <th style="width: 40px;">Quantity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>HBLXL</td>
-                            <td>Hoodie</td>
-                            <td>Blue</td>
-                            <td>XL</td>
-                            <td><input type="number" value="10"></td>
-                        </tr>
-                        <!--Inventory items-->
-                    </tbody>
-                </table>
-                <button class="product-card-button" style="margin-left: 46%; margin-top: 8px; border-radius: 8px; width: 80px; height: 30px;">
+                <form action="../controllers/php/update_inventory.php" method="post">
+                    <table style="width: 100%;" id="inventory-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Type</th>
+                                <th>Size</th>
+                                <th>Color</th>
+                                <th style="width: 40px;">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--Inventory items-->
+                        </tbody>
+                    </table>
+                    <button type="submit" id="update-btn" class="product-card-button" style="float: right; margin-right: 10%; margin-top: 8px; border-radius: 8px; width: 120px; color: white; display: none;">
+                        Update stock
+                    </button>
+                </form>
+                <button onclick="show_iadd_bar()" class="product-card-button" style="float: left; margin-left: 42%; margin-top: 8px; border-radius: 8px; width: 80px; height: 30px;">
                     <i class="fa-regular fa-plus fa-lg" style="color: white;"></i>
                 </button>
+
+                <!--Item adding-->
+                <div class="row" id="item-add" style="margin-top: 20px; display: none;">
+                    <div class="col-md-12">
+                        <form action="../controllers/php/add_item.php" method="post">
+                            <table style="width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Size</th>
+                                        <th>Color</th>
+                                        <th>Quantity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <select name="garment" id="gar-sel">
+                                                <option value="select">select</option>
+                                                <option value="P">T-shirt</option>
+                                                <option value="S">Hoodie</option>
+                                                <option value="M">Long-sleeved</option>
+                                                <option value="T">Sleeveless</option>
+                                                <option value="C">Cap</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="size" id="size-sel">
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="color" id="color-sel">
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="number" name="quantity">
+                                        </td>
+                                        <td class="nopad-td">
+                                            <button class="dashb-button" type="submit"><i class="fa-solid fa-check"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
                 
-                <button onclick='show_options()' style="float: right; border-radius: 8px; background-color: #316639; border: 0; color: white; padding: 6px; margin: 12px;">
-                    Show restrictions
-                </button>
+                <div class="row" style="width: 100%; margin-top: 80px;">
+                    <div class="col-md-12">
+                        <button onclick='show_options()' style="float: right; border-radius: 8px; background-color: #316639; border: 0; color: white; padding: 6px; margin-right: 12px;">
+                            Show constraints
+                        </button>
+                    </div>
+                </div>
 
-                <!--Clothing restrictions-->
-                <div id="specs" style="display: none; margin-top: 80px;">
-                    <!--Colors table-->
-                    <h3 class="column-title">Available Colors</h3>
-                    <table style="width: 100%;">
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th><i class="fa-solid fa-circle" style="color: black;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #58595b;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #c9c9c9;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: white;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #fff4db;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #c9c9c9;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #c8c5af;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #4e3f19;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #680025;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #851013;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #d71920;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #b45314;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #f26522;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #ffc20e;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #ffef6c;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #8dc63f;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #008c4f;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #59581a;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #004a35;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #002659;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #305482;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #0066b3;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #00a4d2;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #5888c0;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #b9e6fa;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #95d1b1;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #fcdce1;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #f79679;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #d42b91;"></i></th>
-                            <th><i class="fa-solid fa-circle" style="color: #3e2680;"></i></th>
-                        </tr>
-                        <tr>
-                            <td>H</td>
-                            <td>Hoodie</td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>T</td>
-                            <td>T-Shirt</td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>L</td>
-                            <td>Long-Sleeved</td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>S</td>
-                            <td>Sleeveless</td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>C</td>
-                            <td>Cap</td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                    </table>
+                <!--Clothing constraints-->
+                <div id="specs" style="display: none; margin-top: 80px; padding: 50px;">
+                    <div class="container" style="margin-top: 20px;">
+                        <form action="../controllers/php/update_constraints.php" method="post">
+                            <!--T-shirts-->
+                            <div class="row" style="margin: 15px;">
+                                <h2 style="text-align: left;" onclick="show_constraints('P')">T-shirts <i class="fa-solid fa-angle-down"></i></h2>
+                            </div>
+                            <div class="row" id="constraints-P">
+                            </div>
 
-                    <!--Sizes table-->
-                    <h3 class="column-title">Available Sizes</h3>
-                    <table style="width: 100%;">
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>1</th>
-                            <th>2</th>
-                            <th>3</th>
-                            <th>NS</th>
-                            <th>NM</th>
-                            <th>NL</th>
-                            <th>NXL</th>
-                            <th>JXS</th>
-                            <th>JS</th>
-                            <th>JM</th>
-                            <th>JL</th>
-                            <th>JXL</th>
-                            <th>XS</th>
-                            <th>S</th>
-                            <th>M</th>
-                            <th>L</th>
-                            <th>XL</th>
-                            <th>XXL</th>
-                            <th>XXXL</th>
-                            <th>Gendered</th>
-                        </tr>
-                        <tr>
-                            <td>H</td>
-                            <td>Hoodie</td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>T</td>
-                            <td>T-Shirt</td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>L</td>
-                            <td>Long-Sleeved</td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>S</td>
-                            <td>Sleeveless</td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>C</td>
-                            <td>Cap</td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                    </table>
+                            <!--Hoodies-->
+                            <div class="row" style="margin: 15px;">
+                                <h2 style="text-align: left;" onclick="show_constraints('S')">Hoodies <i class="fa-solid fa-angle-down"></i></h2>
+                            </div>
+                            <div class="row" id="constraints-S">
+                            </div>
+
+                            <!--Long-sleeved-->
+                            <div class="row" style="margin: 15px;">
+                                <h2 style="text-align: left;" onclick="show_constraints('M')">Long-sleeved <i class="fa-solid fa-angle-down"></i></h2>
+                            </div>
+                            <div class="row" id="constraints-M">
+                            </div>
+
+                            <!--Sleeveless-->
+                            <div class="row" style="margin: 15px;">
+                                <h2 style="text-align: left;" onclick="show_constraints('T')">Sleeveless <i class="fa-solid fa-angle-down"></i></h2>
+                            </div>
+                            <div class="row" id="constraints-T">
+                            </div>
+
+                            <!--Caps-->
+                            <div class="row" style="margin: 15px;">
+                                <h2 style="text-align: left;" onclick="show_constraints('C')">Caps <i class="fa-solid fa-angle-down"></i></h2>
+                            </div>
+                            <div class="row" id="constraints-C">
+                            </div>
+
+                            <button type="submit" style="float: right; border-radius: 8px; background-color: #316639; border: 0; color: white; padding: 6px; margin: 12px;">
+                                Save changes
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!--Embroideries tab-->
+    <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
+        <h2 style="text-align: center; width: 100%;">Embroideries</h2>
+        <form action="../controllers/php/add_embroidery.php" method="post">
+            <div class="row" style="background-color: rgb(236, 236, 236); padding-top: 20px; padding-bottom: 20px;">
+                <div class="col-md-6">
+                    <input type="file" name="img_file" accept=".png" enctype="multipart/form-data">
+                </div>
+                <div class="col-md-6">            
+                    <h5>Name</h5>
+                    <input type="text" name="name">
+                    <h5>Size</h5>
+                    <select name="size">
+                        <option value="1">Small</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Large</option>
+                    </select>
+                    <h5>Price</h5>
+                    <input type="number" name="price">
+                    <h5>Tags</h5>
+                    <input type="text" name="tags">
+                    <button type="submit" class="product-card-button" style="float: right; margin-right: 10%; margin-top: 8px; border-radius: 8px; width: 120px; color: white;">Submit</button>
+                </div>            
+            </div>
+        </form>
     </div>
     <script>
         $(document).ready(function(){
@@ -545,6 +234,63 @@
 
         function show_options(){
             document.getElementById('specs').style.setProperty('display', 'block');
+        }
+
+        function show_iadd_bar(){
+            document.getElementById('item-add').style.setProperty('display', 'block');
+        }
+
+        function show_constraints(garment){
+            const xhttp = new XMLHttpRequest();
+            xhttp.open("POST", "../controllers/php/constraints_form.php");
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.onload = function() {
+                document.getElementById("constraints-" + garment).innerHTML = this.responseText;
+            }
+            xhttp.send("type=" + garment);
+        }
+
+        function delete_item(it_id){
+            $.ajax({
+                url: '../controllers/php/delete_item.php',
+                type: 'POST',
+                data: {
+                    it_id
+                }
+            });
+        }
+
+        var e = document.getElementById("gar-sel");
+
+        function onChange_sel() {
+            function change_s(){
+                var value = e.value;
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", "../controllers/php/get_sizes.php");
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.onload = function() {
+                    document.getElementById("size-sel").innerHTML = this.responseText;
+                }
+                xhttp.send("type=" + value);
+            }
+            function change_c(){
+                var value = e.value;
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", "../controllers/php/get_colors.php");
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.onload = function() {
+                    document.getElementById("color-sel").innerHTML = this.responseText;
+                }
+                xhttp.send("type=" + value);
+            }
+            change_s();
+            change_c();
+        }
+        e.onchange = onChange_sel;
+        onChange_sel();
+
+        function show_update() {
+            document.getElementById('update-btn').style.setProperty('display', 'block');
         }
     </script>
   </body>

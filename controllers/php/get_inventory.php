@@ -14,7 +14,7 @@ if($conn->connect_error){
     diel("Conexión fallida: " . $conn->connect_error);
 }
 
-$sql = "SELECT i.id, g.name as garment, c.name as color, s.name as sizee, i.quantity FROM items AS i
+$sql = "SELECT i.id, g.name as garment, c.name as color, c.hex, s.name as sizee, i.quantity FROM items AS i
     INNER JOIN garments AS g ON g.id = i.garment_id
     INNER JOIN colors AS c ON c.id = i.color_id
     INNER JOIN sizes AS s ON s.id = i.size_id";
@@ -25,9 +25,12 @@ if ($result->num_rows > 0) {
         echo "<tr>
                 <td>{$row['id']}</td>
                 <td>{$row['garment']}</td>
-                <td>{$row['color']}</td>
                 <td>{$row['sizee']}</td>
-                <td><input type='number' value='{$row['quantity']}'></td>
+                <td>{$row['color']} <i class='fa-solid fa-circle' style='color: #{$row['hex']};'></td>
+                <td><input onclick='show_update()' name=\"{$row['id']}\" type='number' value='{$row['quantity']}'></td>
+                <td class='nopad-td'>
+                    <button onclick='delete_item(\"{$row['id']}\")' class='dashb-button' style='background-color: rgb(158, 68, 68);'><i class='fa-solid fa-trash'></i></button>
+                </td>
             </tr>";
     }
 }
