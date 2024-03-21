@@ -1,6 +1,7 @@
 //agregar un if dependiendo del tipo de prenda
 
 document.addEventListener("DOMContentLoaded", function() {
+    //color id
     let black_btn = document.getElementById('black');
     let red_btn = document.getElementById('red');
     let cherry_btn = document.getElementById('cherry');
@@ -20,8 +21,38 @@ document.addEventListener("DOMContentLoaded", function() {
     let dark_gray_btn = document.getElementById('dark-gray');
     let gray_btn = document.getElementById('gray');
     let white_btn = document.getElementById('white');
-    let color_change = document.getElementById("color-change");
+    let color_change = document.getElementById('color-change');
+    //garment id
+    let tshirt_btn = document.getElementById('tshirt-btn');
+    let longsleeve_btn = document.getElementById('longsleeve-btn');
+    let sleeveless_btn = document.getElementById('sleeveless-btn');
+    let cap_btn = document.getElementById('cap_btn');
+    let garment_change = document.getElementById('color-change');
+    //garment exchanges
+    let tshirt_exchange = document.getElementById('tshirt');
+    let longsleeve_exchange = document.getElementById('longsleeve');
+    let sleeveless_exchange = document.getElementById('sleeveless');
+    let cap_exchange = document.getElementById('cap');
+    let hoodie_exchange = document.getElementById('hoodie');
 
+    //garment changes
+    tshirt_btn.onclick = function() {
+        garment_change.src = "images/clothing-colors/ts-blck.png";
+        tshirt_exchange.src = "images/clothing-colors/hd-blck.png";
+    }
+
+    longsleeve_btn.onclick = function() {
+        garment_change.src = "images/clothing-colors/lng-blck.png";
+        longsleeve_exchange.src = "images/clothing-colors/hd-blck.png";
+
+    }
+
+    sleeveless_btn.onclick = function() {
+        garment_change.src = "images/clothing-colors/slvls-blck.png";
+        sleeveless_exchange.src = "images/clothing-colors/hd-blck.png";
+    }
+
+    //color changes
     black_btn.onclick = function() {
         color_change.src = "images/clothing-colors/hd-blck.png";
     }
