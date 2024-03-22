@@ -22,14 +22,15 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
+        $temp_id = $row['id'];
         echo "<tr>
                 <td>{$row['id']}</td>
                 <td>{$row['garment']}</td>
                 <td>{$row['sizee']}</td>
                 <td>{$row['color']} <i class='fa-solid fa-circle' style='color: #{$row['hex']};'></td>
-                <td><input onclick='show_update()' name=\"{$row['id']}\" type='number' value='{$row['quantity']}'></td>
+                <td><input onclick=\"show_update('i')\" name=\"{$row['id']}\" type='number' value='{$row['quantity']}'></td>
                 <td class='nopad-td'>
-                    <button onclick='delete_item(\"{$row['id']}\")' class='dashb-button' style='background-color: rgb(158, 68, 68);'><i class='fa-solid fa-trash'></i></button>
+                    <button onclick=\"delete_item('{$temp_id}', 'i')\" class='dashb-button' style='background-color: rgb(158, 68, 68);'><i class='fa-solid fa-trash'></i></button>
                 </td>
             </tr>";
     }

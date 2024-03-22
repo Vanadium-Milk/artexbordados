@@ -14,13 +14,15 @@ if($conn->connect_error){
     diel("Conexión fallida: " . $conn->connect_error);
 }
 
-$file = $_POST['img_file'];
-$name = $_POST['name'];
-$size = $_POST['size'];
-$price = $_POST['price'];
-$tags = $_POST['tags'];
+$sql = "SELECT id FROM embroideries";
+$result = $conn->query($sql);
 
-$conn->query("INSERT INTO embroideries (name, size, price, tags, file_n) VALUES ('{$name}', {$size}, {$price}, '{$tags}', '{$file}')");
-
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $temp_id = $row['id'];
+        $price = $_POST[$temp_id];
+        $conn->query("UPDATE embroideries SET price = $price WHERE id = '$temp_id'");
+    }
+}
 header('Location: ../../view/dashboard.html');
 ?>

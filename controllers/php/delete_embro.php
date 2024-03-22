@@ -14,13 +14,7 @@ if($conn->connect_error){
     diel("Conexión fallida: " . $conn->connect_error);
 }
 
-$file = $_POST['img_file'];
-$name = $_POST['name'];
-$size = $_POST['size'];
-$price = $_POST['price'];
-$tags = $_POST['tags'];
+$id = $_POST['it_id'];
 
-$conn->query("INSERT INTO embroideries (name, size, price, tags, file_n) VALUES ('{$name}', {$size}, {$price}, '{$tags}', '{$file}')");
-
-header('Location: ../../view/dashboard.html');
+$conn->query("DELETE FROM embroideries WHERE id = {$id}");
 ?>
