@@ -114,19 +114,19 @@ document.addEventListener("DOMContentLoaded", function() {
         if (garment_change.src == tshirt_source) {
             //color changes
             black_btn.onclick = function() {
-                color_change.src = "images/clothing-colors/hd-blck.png";
+                color_change.src = "images/clothing-colors/ts-blck.png";
             }
         
             red_btn.onclick = function() {
-                color_change.src = "images/clothing-colors/hd-red.png";
+                color_change.src = "images/clothing-colors/ts-red.png";
             }
         
             cherry_btn.onclick = function() {
-                color_change.src = "images/clothing-colors/hd-chr.png";
+                color_change.src = "images/clothing-colors/ts-chr.png";
             }
         
             orange_btn.onclick = function() {
-                color_change.src = "images/clothing-colors/hd-ora.png";
+                color_change.src = "images/clothing-colors/ts-ora.png";
             }
         
             golden_btn.onclick = function() {
@@ -191,20 +191,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
         } else if (garment_change.src == longsleeve_source) {
             //color changes
+
             black_btn.onclick = function() {
-                color_change.src = "images/clothing-colors/hd-blck.png";
+                color_change.src = "images/clothing-colors/lng-blck.png";
             }
         
             red_btn.onclick = function() {
-                color_change.src = "images/clothing-colors/hd-red.png";
+                color_change.src = "images/clothing-colors/lng-red.png";
             }
         
             cherry_btn.onclick = function() {
-                color_change.src = "images/clothing-colors/hd-chr.png";
+                color_change.src = "images/clothing-colors/lng-chr.png";
             }
         
             orange_btn.onclick = function() {
-                color_change.src = "images/clothing-colors/hd-ora.png";
+                color_change.src = "images/clothing-colors/lng-ora.png";
             }
         
             golden_btn.onclick = function() {
@@ -228,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         
             skyblue_btn.onclick = function() {
-                color_change.src = "images/clothing-colors/hd-sky.png";
+                color_change.src = "images/clothing-colors/lng-sky.png";
             }
         
             blue_btn.onclick = function() {
@@ -422,6 +423,86 @@ document.addEventListener("DOMContentLoaded", function() {
             white_btn.onclick = function() {
                 color_change.src = "images/clothing-colors/hd-white.png";
             }
+
+        } else if (garment_change.src == hoodie_source) {
+            //color changes
+
+            black_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-blck.png";
+            }
+        
+            red_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-red.png";
+            }
+        
+            cherry_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-chr.png";
+            }
+        
+            orange_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-ora.png";
+            }
+        
+            golden_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-gld.png";
+            }
+        
+            yellow_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-yel.png";
+            }
+        
+            lime_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-lime.png";
+            }
+        
+            green_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-grn.png";
+            }
+        
+            dark_green_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-drk-grn.png";
+            }
+        
+            skyblue_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/lng-sky.png";
+            }
+        
+            blue_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-blue.png";
+            }
+        
+            navy_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-navy.png";
+            }
+        
+            purple_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-purp.png";
+            }
+        
+            pink_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-pink.png";
+            }
+        
+            lilac_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-lila.png";
+            }
+        
+            pastel_pink_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-pl-pink.png";
+            }
+        
+            dark_gray_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-drk-gray.png";
+            }
+        
+            gray_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-gray.png";
+            }
+        
+            white_btn.onclick = function() {
+                color_change.src = "images/clothing-colors/hd-white.png";
+            }
+        
         }
     }
 })
