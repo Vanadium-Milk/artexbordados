@@ -414,14 +414,51 @@ h2 {
 }
 
 .product-card-hoodie{
-    padding: 20% 15px;
-    height: 275px;
+    padding: 15% 10px;
 }
 
 
 .product-card-cap{
-    padding: 30% 15px;
-    height: 275px;
+    padding: 15% 10px;
+}
+
+.product-card-cap #embroidery{
+    margin-top: 3.5vw !important;
+}
+
+.product-card-tshirt{
+    padding: 15% 10px;
+}
+
+.product-card-tshirt #embroidery{
+    margin-top: 3vw;
+}
+
+.product-card-longsleeve{
+    padding: 15% 10px;
+}
+
+.product-card-longsleeve #garment{
+    width: 87%;
+    margin-left: 0.7vw;
+}
+
+.product-card-longsleeve #embroidery{
+    margin-left: -7.5vw;
+    margin-top: 3vw;
+}
+
+.product-card-sleeveless{
+    padding: 15% 10px;
+}
+
+.product-card-sleeveless #garment{
+    width: 80%;
+    margin-left: 13%;
+}
+
+.product-card-sleeveless #embroidery{
+    margin-left: -7vw;
 }
 
 .product-card-description{
@@ -614,9 +651,41 @@ h2 {
         white-space: nowrap;
     }
 
-    .product-card-hoodie, .product-card-cap{
-        height: 220px;
+    .product-card-hoodie, .product-card-cap, .product-card-sleeveless{
+        height: 50vw;
     }
+
+    .product-card-sleeveless #garment{
+        margin-left: 10%;
+    }
+
+    .product-card-sleeveless #embroidery{
+        margin-left: -40%;
+    }
+
+    .store-embroidery{
+        position: absolute;
+        margin-left: -23vw !important;
+        margin-top: 6.5vw !important;
+        width: 25%;
+    }
+
+    .product-card-sleeveless #embroidery{
+        margin-top: 8.5vw !important;
+    }
+
+    .product-card-cap #embroidery{
+        margin-top: 8.5vw !important;
+    }
+
+    .product-card-tshirt #embroidery{
+        margin-top: 8.5vw !important;
+    }
+
+    .product-card-longsleeve #garment{
+        margin-left: 2vw !important;
+    }
+    
 }
 
 .my-cart-button{
@@ -653,9 +722,9 @@ h2 {
 
 .store-embroidery{
     position: absolute;
+    margin-left: -8.5vw;
+    margin-top: 2vw;
     width: 25%;
-    margin-top: 12%;
-    margin-left: -48%;
 }
 
 .preview-img {
