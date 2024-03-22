@@ -3,7 +3,7 @@ session_start();
 
 $servername = 'localhost';
 $username = 'root';
-$password = '';
+$password = 'admin123';
 $database = 'artex';
 
 // Crear una conexión

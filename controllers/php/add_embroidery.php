@@ -3,7 +3,7 @@ session_start();
 
 $servername = 'localhost';
 $username = 'root';
-$password = '';
+$password = 'admin123';
 $database = 'artex';
 
 // Crear una conexión
@@ -20,5 +20,7 @@ $size = $_POST['size'];
 $price = $_POST['price'];
 $tags = $_POST['tags'];
 
-print($file);
+$conn->query("INSERT INTO embroideries (name, size, price, tags, file_n) VALUES ('{$name}', {$size}, {$price}, '{$tags}', '{$file}')");
+
+header('Location: ../../view/dashboard.html');
 ?>

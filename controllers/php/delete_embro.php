@@ -14,12 +14,7 @@ if($conn->connect_error){
     diel("Conexión fallida: " . $conn->connect_error);
 }
 
-$g_type = $_POST['garment'];
-$color = $_POST['color'];
-$size = $_POST['size'];
-$qty = $_POST['quantity'];
+$id = $_POST['it_id'];
 
-$conn->query("INSERT INTO items VALUES ('{$g_type}{$size}{$color}', '{$g_type}', '{$size}', '{$color}', {$qty})");
-
-header('Location: ../../view/dashboard.html');
+$conn->query("DELETE FROM embroideries WHERE id = {$id}");
 ?>

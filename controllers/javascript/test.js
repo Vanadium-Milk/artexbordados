@@ -4,15 +4,10 @@ var start2 = 1;
 var itemPrice1 = 550;
 var itemPrice2 = 250;
 
-
-//Product Page Functions
-
-
 //My Cart Functions
 window.onload = function() {
     updatePriceAndQuantity('quantity1', 'price1', start1, itemPrice1);
     updatePriceAndQuantity('quantity2', 'price2', start2, itemPrice2);
-    updatePriceAndQuantity('quantity', 'price', product_card_start, itemPrice1);
     document.getElementById('items-in-list').textContent = start1 + start2;
     updateTotal(itemPrice1, itemPrice2);
 }
