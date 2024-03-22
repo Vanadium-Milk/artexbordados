@@ -665,7 +665,7 @@ h2 {
 
     .store-embroidery{
         position: absolute;
-        margin-left: -23vw !important;
+        margin-left: -28vw !important;
         margin-top: 6.5vw !important;
         width: 25%;
     }
@@ -722,7 +722,7 @@ h2 {
 
 .store-embroidery{
     position: absolute;
-    margin-left: -8.5vw;
+    margin-left: -10vw !important;
     margin-top: 2vw;
     width: 25%;
 }

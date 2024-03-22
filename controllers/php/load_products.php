@@ -14,15 +14,15 @@ if($conn->connect_error){
     diel("Conexión fallida: " . $conn->connect_error);
 }
 
-$sql = "SELECT s.embro, s.e_name, s.file_n, s.g_name, s.gcol, s.price + s.gar_p AS t_price, count(*) AS t_sales FROM
-(SELECT e.id AS embro, e.name AS e_name, e.price, e.file_n, g.name AS g_name, g.price AS gar_p, concat(g.id, c.id) AS gcol, count(*) AS total FROM embroideries AS e
-INNER JOIN order_item AS oi ON oi.embroidery_id = e.id
-INNER JOIN items AS i ON i.id = oi.item_id
-INNER JOIN garments AS g on i.garment_id = g.id
-INNER JOIN colors AS c on i.color_id = c.id
+$sql = "SELECT s.embro, s.e_name, s.file_n, ifnull(s.g_name, 'Sudadera') AS g_name, ifnull(s.gcol, 'SNG') AS gcol, s.price + ifnull(s.gar_p, 250) AS t_price, sum(o.quantity) AS t_sales FROM
+(SELECT e.id AS embro, e.name AS e_name, e.price, e.file_n, g.name AS g_name, g.price AS gar_p, concat(g.id, c.id) AS gcol, sum(oi.quantity) AS total FROM embroideries AS e
+LEFT JOIN order_item AS oi ON oi.embroidery_id = e.id
+LEFT JOIN items AS i ON i.id = oi.item_id
+LEFT JOIN garments AS g on i.garment_id = g.id
+LEFT JOIN colors AS c on i.color_id = c.id
 GROUP BY e.id, gcol
 ORDER BY total DESC) AS s
-INNER JOIN order_item AS o ON s.embro = o.embroidery_id
+LEFT JOIN order_item AS o ON s.embro = o.embroidery_id
 GROUP BY s.embro
 ORDER BY t_sales DESC";
 $result = $conn->query($sql);
