@@ -27,20 +27,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-    function addToCart(productName, productPrice, garmentType, garmentColor, garmentSize, quantity) {
+    function addToCart(productName, productPrice, garmentType, garmentColor, garmentSize) {
         var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-        var product = { 
-            name: productName, 
-            price: parseFloat(productPrice), 
-            garment: garmentType, 
-            color: garmentColor, 
-            size: garmentSize, 
-            quantity: parseInt(quantity) // Agregar la cantidad al objeto product
-        };
+        var product = { name: productName, price: parseFloat(productPrice), garment: garmentType, color: garmentColor, size: garmentSize};
         cartItems.push(product);
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
         
-        // Actualizar el total del carrito si estamos en la interfaz del carrito
+        //para actualizar el total del carrito si estamos en la interfaz del carrito
         updateCartTotal(productPrice);
     }
 
@@ -68,8 +61,8 @@ document.addEventListener("DOMContentLoaded", function() {
             var garmentType = document.querySelector(".garment-options .active").dataset.type;
             var color = document.querySelector(".color-options .active").dataset.color;
             var size = document.querySelector("select[name='size']").value;
-            var quantity = document.getElementById("quantity").textContent;
-            addToCart(productName, productPrice, garmentType, color, size, quantity);
+            
+            addToCart(productName, productPrice, garmentType, color, size);
         });
     }
 
