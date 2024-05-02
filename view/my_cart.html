@@ -37,22 +37,13 @@
         <h1 style="font-family: 'League Spartan'; color: #316639; text-align: center; padding-top: 50px;">My Cart</h1>
 
         <div class="item-list">
-            <div class="items-column">
-                <!-- Aquí se añadirán los elementos individuales de los productos -->
-            </div>
-            <div class="checkout-window">
-                <h1>Order Summary</h1>
-                <div class="white-line"></div>
-        
-                <h2>Items</h2>
-                <h3 id="total-id"></h3>
-                <h2>Discounts</h2>
-                <h3 id="total-discounts">$0</h3>
-                <h2 id="total">Total</h2>
-                <h3 id="total-checkout"></h3>
-                <form action="payment-page.html"><button class="checkout-btn">Checkout</button></form>
-            </div>
         </div>
+
+        <div class="cart-total">
+            Total: 0
+        </div>
+
+        <button id="clear-cart-btn" class="button">Clear Cart</button>
 
         <!-- JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
