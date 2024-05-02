@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-    function addToCart(productName, productPrice, garmentType, garmentColor, garmentSize, quantity) {
+    function addToCart(productName, productPrice, garmentType, garmentColor, garmentSize, quantity, originalPrice) {
         var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
         var product = { 
             name: productName, 
@@ -35,29 +35,14 @@ document.addEventListener("DOMContentLoaded", function() {
             garment: garmentType, 
             color: garmentColor, 
             size: garmentSize, 
-            quantity: parseInt(quantity) // Agregar la cantidad al objeto product
+            quantity: parseInt(quantity),
+            originalp: originalPrice
         };
         cartItems.push(product);
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
         
-        // Actualizar el total del carrito si estamos en la interfaz del carrito
+        // actualizar el total del carrito si estamos en la interfaz del carrito
         updateCartTotal(productPrice);
-    }
-
-    function updateCartTotal() {
-        var cartTotalElement = document.querySelector(".cart-total");
-        
-        if (cartTotalElement !== null) {
-            var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-            var total = 0;
-            
-            cartItems.forEach(function(product) {
-                total += product.price;
-            });
-            
-
-            cartTotalElement.textContent = "Total: $" + total.toFixed(2);
-        }
     }
 
     var addToCartButton = document.querySelector(".add-to-cart");
@@ -69,9 +54,8 @@ document.addEventListener("DOMContentLoaded", function() {
             var color = document.querySelector(".color-options .active").dataset.color;
             var size = document.querySelector("select[name='size']").value;
             var quantity = document.getElementById("quantity").textContent;
-            addToCart(productName, productPrice, garmentType, color, size, quantity);
+            var originalp = document.getElementById("original-price").textContent;
+            addToCart(productName, productPrice, garmentType, color, size, quantity, originalp);
         });
     }
-
-    updateCartTotal();
 });

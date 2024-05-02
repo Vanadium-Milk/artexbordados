@@ -213,3 +213,131 @@
     margin-bottom: 30px;
     margin-top:30px;
 }
+
+.item{
+    padding-left: 10%;
+    color: black;
+    font-family: 'League Spartan';
+    display: flex;
+    margin-bottom: 2vw;
+}
+
+.item-info{
+    margin-left: 1.5vw;
+    margin-top: 1.5vw;
+}
+
+.item-image{
+    background-color: #E8E8E8;
+    border-radius: 20px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+}
+
+.product-name, .product-garment{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.product-color, .product-size{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.product-quantity{
+    color: rgb(92, 92, 92);
+    font-size: 18px;
+}
+
+.product-price h3{
+    margin-top:3vw;
+    color: grey;
+    font-size: 18px;
+    margin-bottom:-1.7vw;
+    font-weight: 400;
+}
+
+.product-price{
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.remove-button{
+    background-color: transparent;
+    border-style: none;
+}
+
+.remove-button:focus{
+    outline: none;
+}
+
+.remove-button i{
+    color: grey;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.checkout-window{
+    background-color: #316639;
+    color: white;
+    font-family: 'League Spartan';
+    width: 32vw;
+    height: 27vw;
+    border-radius: 30px;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vw;
+    margin-right: 10%;
+}
+
+.checkout-window h1{
+    text-align: center;
+    font-size: 24px;
+}
+
+.checkout-window h2{
+    font-weight: 400;
+    font-size: 21px;
+    margin-top: 20px;
+}
+
+.checkout-window h3{
+    font-weight: 200;
+    font-size: 21px;
+}
+
+.white-line{
+    background-color: white;
+    border-color: 1px;
+    height: 1px;
+    width: 100%;
+}
+
+.checkout-btn{
+    margin-top: 2vw;
+    background-color: white;
+    color: #316639;
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border-style: none;
+    font-weight: 500;
+    margin-left: 9.5vw;
+    cursor: pointer;
+}
+
+#total{
+    margin-top: 4vw;
+}
+
+.item-list{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.items-column{
+    flex-grow: 1;
+}
