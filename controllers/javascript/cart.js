@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-    function addToCart(productName, productPrice, garmentType, garmentColor, garmentSize, quantity, originalPrice) {
+    function addToCart(productName, productPrice, garmentType, garmentColor, garmentSize, quantity, originalPrice, productImage) {
         var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
         var product = { 
             name: productName, 
@@ -36,7 +36,8 @@ document.addEventListener("DOMContentLoaded", function() {
             color: garmentColor, 
             size: garmentSize, 
             quantity: parseInt(quantity),
-            originalp: originalPrice
+            originalp: originalPrice,
+            image: productImage
         };
         cartItems.push(product);
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
