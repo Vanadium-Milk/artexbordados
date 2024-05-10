@@ -50,7 +50,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
             var html = `
                 <button class="remove-button"><i class="fa-solid fa-xmark"></i></button>
-                <div class="item-image">${item.name}</div>
+                <div class="item-image">
+                    <img src="${item.garmentImg}" alt="Garment Image" class="garment-img">
+                    <img src="${item.embroideryImg}" alt="Embroidery Image" class="embroidery-img">
+                </div>
                 <div class="item-info">
                     <span class="product-name">${item.name}</span>
                     <span class="product-garment">${nombrePrenda(item.garment)}</span>

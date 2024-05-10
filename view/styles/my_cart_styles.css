@@ -225,6 +225,19 @@
     .item-image{
         width: 40vw !important;
         height: 55vw !important;
+        padding: 10px 10px !important;
+    }
+    
+    .item-image .embroidery-img{
+        width: 15vw !important;
+        height: 15vw !important;
+        position: absolute;
+        margin-top: -30px;
+    }
+    
+    .item-image .garment-img{
+        width: 40vw !important;
+        height: 40vw !important;
     }
 }
 
@@ -410,4 +423,20 @@
     flex-grow: 1;
     width: 100%;
     max-width: 100%;
+}
+
+.item-image{
+    padding: 10px 10px;
+}
+
+.item-image .embroidery-img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    margin-top: -30px;
+}
+
+.item-image .garment-img{
+    width: 200px;
+    height: 200px;
 }

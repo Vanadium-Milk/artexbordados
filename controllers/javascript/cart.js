@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-    function addToCart(productName, productPrice, garmentType, garmentColor, garmentSize, quantity, originalPrice, productImage) {
+    function addToCart(productName, productPrice, garmentType, garmentColor, garmentSize, quantity, originalPrice, garmentImage, embroideryImage) {
         var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
         var product = { 
             name: productName, 
@@ -37,7 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
             size: garmentSize, 
             quantity: parseInt(quantity),
             originalp: originalPrice,
-            image: productImage
+            garmentImg: garmentImage,
+            embroideryImg: embroideryImage
         };
         cartItems.push(product);
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
@@ -56,7 +57,9 @@ document.addEventListener("DOMContentLoaded", function() {
             var size = document.querySelector("select[name='size']").value;
             var quantity = document.getElementById("quantity").textContent;
             var originalp = document.getElementById("original-price").textContent;
-            addToCart(productName, productPrice, garmentType, color, size, quantity, originalp);
+            var garmentImage = document.querySelector(".pp-embroidery").src;
+            var embroideryImage = document.querySelector(".preview-img").src;
+            addToCart(productName, productPrice, garmentType, color, size, quantity, originalp, embroideryImage, garmentImage);
         });
     }
 });
